@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cookbook</title>
+  
+  
+  <link href="/cookbook/atom.xml" rel="self"/>
+  
+  <link href="https://tangoslee.github.io/cookbook/"/>
+  <updated>2019-02-08T04:09:55.451Z</updated>
+  <id>https://tangoslee.github.io/cookbook/</id>
+  
+  <author>
+    <name>Sangmin Lee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript</title>
+    <link href="https://tangoslee.github.io/cookbook/2019/02/04/javascript/"/>
+    <id>https://tangoslee.github.io/cookbook/2019/02/04/javascript/</id>
+    <published>2019-02-04T16:42:00.000Z</published>
+    <updated>2019-02-08T04:09:55.451Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Currency-Format&quot;&gt;&lt;a href=&quot;#Currency-Format&quot; class=&quot;headerlink&quot; title=&quot;Currency Format&quot;&gt;&lt;/a&gt;Currency Format&lt;/h1&gt;&lt;p&gt;Equivalent to
+        
+      
+    
+    </summary>
+    
+    
+      <category term="number_format" scheme="https://tangoslee.github.io/cookbook/tags/number-format/"/>
+    
+      <category term="money_format" scheme="https://tangoslee.github.io/cookbook/tags/money-format/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql</title>
+    <link href="https://tangoslee.github.io/cookbook/2019/01/24/mysql/"/>
+    <id>https://tangoslee.github.io/cookbook/2019/01/24/mysql/</id>
+    <published>2019-01-24T14:34:57.000Z</published>
+    <updated>2019-01-24T16:16:51.482Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ERROR-1298-HY000-Unknown-or-incorrect-time-zone-‘Asia-Manila’&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="https://tangoslee.github.io/cookbook/tags/mysql/"/>
+    
+      <category term="timezone" scheme="https://tangoslee.github.io/cookbook/tags/timezone/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>aws-cli</title>
+    <link href="https://tangoslee.github.io/cookbook/2019/01/22/aws-cli/"/>
+    <id>https://tangoslee.github.io/cookbook/2019/01/22/aws-cli/</id>
+    <published>2019-01-22T11:09:20.000Z</published>
+    <updated>2019-01-24T14:34:13.479Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Configure&quot;&gt;&lt;a href=&quot;#Configure&quot; class=&quot;headerlink&quot; title=&quot;Configure&quot;&gt;&lt;/a&gt;Configure&lt;/h2&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="aws" scheme="https://tangoslee.github.io/cookbook/tags/aws/"/>
+    
+      <category term="aws-cli" scheme="https://tangoslee.github.io/cookbook/tags/aws-cli/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fluent-plugin-xxxx</title>
+    <link href="https://tangoslee.github.io/cookbook/2019/01/08/fluent-plugin-grep/"/>
+    <id>https://tangoslee.github.io/cookbook/2019/01/08/fluent-plugin-grep/</id>
+    <published>2019-01-08T22:12:11.000Z</published>
+    <updated>2019-02-08T04:09:55.451Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Alias&quot;&gt;&lt;a href=&quot;#Alias&quot; class=&quot;headerlink&quot; title=&quot;Alias&quot;&gt;&lt;/a&gt;Alias&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="fluentd" scheme="https://tangoslee.github.io/cookbook/tags/fluentd/"/>
+    
+      <category term="fluent-plugin-grep" scheme="https://tangoslee.github.io/cookbook/tags/fluent-plugin-grep/"/>
+    
+      <category term="fluent-plugin-beats" scheme="https://tangoslee.github.io/cookbook/tags/fluent-plugin-beats/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/12/27/mac/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/12/27/mac/</id>
+    <published>2018-12-27T14:24:15.000Z</published>
+    <updated>2019-01-17T03:48:27.300Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Remap-copy-and-paste-shortcut-Ctrl-c-Ctrl-v&quot;&gt;&lt;a href=&quot;#Remap-copy-and-paste-shortcut-Ctrl-c-Ctrl-v&quot; class=&quot;headerlink&quot; title=&quot;Remap
+        
+      
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="https://tangoslee.github.io/cookbook/tags/mac/"/>
+    
+      <category term="ctrl-c" scheme="https://tangoslee.github.io/cookbook/tags/ctrl-c/"/>
+    
+      <category term="ctrl-v" scheme="https://tangoslee.github.io/cookbook/tags/ctrl-v/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Multiple Routing Files in Laravel</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/12/01/laravel-multiple-routing-files/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/12/01/laravel-multiple-routing-files/</id>
+    <published>2018-12-01T15:50:57.000Z</published>
+    <updated>2018-12-22T16:15:23.832Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;routes&quot;&gt;&lt;a href=&quot;#routes&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="laravel" scheme="https://tangoslee.github.io/cookbook/tags/laravel/"/>
+    
+      <category term="route" scheme="https://tangoslee.github.io/cookbook/tags/route/"/>
+    
+      <category term="multiple_route" scheme="https://tangoslee.github.io/cookbook/tags/multiple-route/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP cs fixer for vim</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/11/23/PHP-cs-fixer-for-vim/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/11/23/PHP-cs-fixer-for-vim/</id>
+    <published>2018-11-23T16:47:52.000Z</published>
+    <updated>2018-11-23T16:55:00.749Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;install&quot;&gt;&lt;a href=&quot;#install&quot; class=&quot;headerlink&quot; title=&quot;install&quot;&gt;&lt;/a&gt;install&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Elasticsearch + Fluentd + Kibana</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/11/15/elasticsearch-fluentd-kibana/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/11/15/elasticsearch-fluentd-kibana/</id>
+    <published>2018-11-16T02:29:33.000Z</published>
+    <updated>2018-11-16T02:31:10.621Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Installation-amp-amp-Configuration&quot;&gt;&lt;a href=&quot;#Installation-amp-amp-Configuration&quot; class=&quot;headerlink&quot; title=&quot;Installation &amp;amp;&amp;amp;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="elasticsearch" scheme="https://tangoslee.github.io/cookbook/tags/elasticsearch/"/>
+    
+      <category term="fluentd" scheme="https://tangoslee.github.io/cookbook/tags/fluentd/"/>
+    
+      <category term="kibana" scheme="https://tangoslee.github.io/cookbook/tags/kibana/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Laravel Tips</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/11/08/laravel/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/11/08/laravel/</id>
+    <published>2018-11-08T21:15:38.000Z</published>
+    <updated>2019-03-08T15:34:07.784Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Must-have-Items&quot;&gt;&lt;a href=&quot;#Must-have-Items&quot; class=&quot;headerlink&quot; title=&quot;Must have Items&quot;&gt;&lt;/a&gt;Must have
+        
+      
+    
+    </summary>
+    
+    
+      <category term="laravel" scheme="https://tangoslee.github.io/cookbook/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vscode Cookbook</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/11/05/vscode-cookbook/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/11/05/vscode-cookbook/</id>
+    <published>2018-11-05T05:13:43.000Z</published>
+    <updated>2018-11-05T05:43:58.869Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Run-multiple-vscode-in-dedicaated-environments-Ubuntu&quot;&gt;&lt;a href=&quot;#Run-multiple-vscode-in-dedicaated-environments-Ubuntu&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vscode" scheme="https://tangoslee.github.io/cookbook/tags/vscode/"/>
+    
+      <category term="ubuntu18.04" scheme="https://tangoslee.github.io/cookbook/tags/ubuntu18-04/"/>
+    
+      <category term="multiple_extension" scheme="https://tangoslee.github.io/cookbook/tags/multiple-extension/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue Cookbook</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/11/01/Vue-Cookbook/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/11/01/Vue-Cookbook/</id>
+    <published>2018-11-01T19:18:42.000Z</published>
+    <updated>2018-11-05T05:06:02.520Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Installation&quot;&gt;&lt;a href=&quot;#Installation&quot; class=&quot;headerlink&quot; title=&quot;Installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;  &lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="https://tangoslee.github.io/cookbook/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/10/19/hello-world/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/10/19/hello-world/</id>
+    <published>2018-10-19T06:07:38.730Z</published>
+    <updated>2018-10-19T06:07:38.730Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 18.04</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/10/19/ubuntu-18-04/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/10/19/ubuntu-18-04/</id>
+    <published>2018-10-19T05:57:34.000Z</published>
+    <updated>2019-01-17T03:48:27.300Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Troubleshooting-Upgrade-16-04-to-18-04&quot;&gt;&lt;a href=&quot;#Troubleshooting-Upgrade-16-04-to-18-04&quot; class=&quot;headerlink&quot; title=&quot;Troubleshooting
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ubuntu 18.04 ubuntu-18.04 tip" scheme="https://tangoslee.github.io/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>elasticsearch</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/10/10/elasticsearch/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/10/10/elasticsearch/</id>
+    <published>2018-10-10T23:00:32.000Z</published>
+    <updated>2018-11-05T07:05:55.995Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Start-from-docker&quot;&gt;&lt;a href=&quot;#Start-from-docker&quot; class=&quot;headerlink&quot; title=&quot;Start from docker&quot;&gt;&lt;/a&gt;Start from
+        
+      
+    
+    </summary>
+    
+    
+      <category term="elasticsearch" scheme="https://tangoslee.github.io/cookbook/tags/elasticsearch/"/>
+    
+      <category term="docker" scheme="https://tangoslee.github.io/cookbook/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Todo</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/10/09/todo/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/10/09/todo/</id>
+    <published>2018-10-09T12:26:56.000Z</published>
+    <updated>2018-10-10T04:12:05.401Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Javascript&quot;&gt;&lt;a href=&quot;#Javascript&quot; class=&quot;headerlink&quot; title=&quot;Javascript&quot;&gt;&lt;/a&gt;Javascript&lt;/h1&gt;&lt;h2 id=&quot;What-is-an-event-loop&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="todo" scheme="https://tangoslee.github.io/cookbook/tags/todo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to Create Self-signed SSL Certificate in my Angular5 App (localhost)</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/</id>
+    <published>2018-10-04T17:03:54.000Z</published>
+    <updated>2018-11-06T19:00:24.242Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Let’s make self-signed certificate and set it for angular 6 &lt;a href=&quot;https://localhost:4200&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://tangoslee.github.io/cookbook/tags/linux/"/>
+    
+      <category term="openssl" scheme="https://tangoslee.github.io/cookbook/tags/openssl/"/>
+    
+      <category term="tips" scheme="https://tangoslee.github.io/cookbook/tags/tips/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Change Default Style From CSS to SCSS in Angular</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/</id>
+    <published>2018-09-30T14:24:48.000Z</published>
+    <updated>2018-09-30T14:39:15.738Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;New-project&quot;&gt;&lt;a href=&quot;#New-project&quot; class=&quot;headerlink&quot; title=&quot;New project&quot;&gt;&lt;/a&gt;New project&lt;/h1&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="angular, css, scss, style, convert" scheme="https://tangoslee.github.io/cookbook/tags/angular-css-scss-style-convert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How To Expand Trello Modal Width</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/09/18/how-to-expand-trello-modal-width/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/09/18/how-to-expand-trello-modal-width/</id>
+    <published>2018-09-18T11:53:28.000Z</published>
+    <updated>2018-09-18T11:59:48.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Simply put below commands in the developer console, while the modal is opening.&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="trello, smallmodal, expandwidth" scheme="https://tangoslee.github.io/cookbook/tags/trello-smallmodal-expandwidth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to Set L2TP VPN for Ubuntu 16.04</title>
+    <link href="https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/"/>
+    <id>https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/</id>
+    <published>2018-07-14T07:19:05.000Z</published>
+    <updated>2018-09-11T15:31:53.593Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;img src=&quot;/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn1.png&quot;&gt;
+&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Detecting an Element is in a specific position on the screen</title>
+    <link href="https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/"/>
+    <id>https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/</id>
+    <published>2017-10-04T17:03:54.000Z</published>
+    <updated>2018-11-06T19:10:43.812Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Detecting-an-Element-Is-in-the-Screen&quot;&gt;&lt;a href=&quot;#Detecting-an-Element-Is-in-the-Screen&quot; class=&quot;headerlink&quot; title=&quot;Detecting an
+        
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="https://tangoslee.github.io/cookbook/tags/javascript/"/>
+    
+      <category term="window.top" scheme="https://tangoslee.github.io/cookbook/tags/window-top/"/>
+    
+      <category term="jQuery" scheme="https://tangoslee.github.io/cookbook/tags/jQuery/"/>
+    
+  </entry>
+  
+</feed>

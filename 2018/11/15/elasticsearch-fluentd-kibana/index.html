@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Elasticsearch + Fluentd + Kibana | Cookbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Installation &amp;amp;&amp;amp; Configurationnginx nginx.conf 12345678http &amp;#123;  ...  log_format logdata &apos;$remote_addr [$time_iso8601] &apos;                  &apos;&quot;$request&quot; $status $body_bytes_sent &apos;">
+<meta name="keywords" content="elasticsearch,fluentd,kibana">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Elasticsearch + Fluentd + Kibana">
+<meta property="og:url" content="https://tangoslee.github.io/cookbook/2018/11/15/elasticsearch-fluentd-kibana/index.html">
+<meta property="og:site_name" content="Cookbook">
+<meta property="og:description" content="Installation &amp;amp;&amp;amp; Configurationnginx nginx.conf 12345678http &amp;#123;  ...  log_format logdata &apos;$remote_addr [$time_iso8601] &apos;                  &apos;&quot;$request&quot; $status $body_bytes_sent &apos;">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-16T02:31:10.621Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Elasticsearch + Fluentd + Kibana">
+<meta name="twitter:description" content="Installation &amp;amp;&amp;amp; Configurationnginx nginx.conf 12345678http &amp;#123;  ...  log_format logdata &apos;$remote_addr [$time_iso8601] &apos;                  &apos;&quot;$request&quot; $status $body_bytes_sent &apos;">
+  
+    <link rel="alternate" href="/cookbook/atom.xml" title="Cookbook" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/cookbook/css/style.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128083707-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-128083707-1');
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/cookbook/" id="logo">Cookbook</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/cookbook/">Home</a>
+        
+          <a class="main-nav-link" href="/cookbook/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/cookbook/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tangoslee.github.io/cookbook"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-elasticsearch-fluentd-kibana" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/15/elasticsearch-fluentd-kibana/" class="article-date">
+  <time datetime="2018-11-16T02:29:33.000Z" itemprop="datePublished">2018-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Elasticsearch + Fluentd + Kibana
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Installation-amp-amp-Configuration"><a href="#Installation-amp-amp-Configuration" class="headerlink" title="Installation &amp;&amp; Configuration"></a>Installation &amp;&amp; Configuration</h2><h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><ul>
+<li><p>nginx.conf</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">  ...</span><br><span class="line">  log_format logdata <span class="string">'$remote_addr [$time_iso8601] '</span></span><br><span class="line">                  <span class="string">'"$request" $status $body_bytes_sent '</span></span><br><span class="line">                  <span class="string">'"$http_user_agent" "$request_body"'</span>;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>sites/casndy.conf</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">log</span>/push &#123;</span><br><span class="line">    access_log /var/<span class="built_in">log</span>/nginx/candy_access.log logdata;</span><br><span class="line">    proxy_pass http://127.0.0.1/postdata;</span><br><span class="line">  &#125;   </span><br><span class="line"></span><br><span class="line">  location = /postdata &#123;</span><br><span class="line">    <span class="comment"># turn off logging here to avoid double logging</span></span><br><span class="line">    access_log off;</span><br><span class="line">    <span class="built_in">return</span> 200;</span><br><span class="line">  &#125;   </span><br><span class="line">  <span class="comment"># https://stackoverflow.com/questions/17609472/really-logging-the-post-request-body-instead-of-with-nginx</span></span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<ul>
+<li>test</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ curl -H <span class="string">'Content-Type: application/json'</span> -X POST http://candylog.local.cd/<span class="built_in">log</span>/push -d <span class="string">'&#123;"error":"test error"&#125;'</span></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;</span><br><span class="line">&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>access_log</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">172.20.0.1 - - [15/Nov/2018:18:10:17 +0000] <span class="string">"POST /log/push HTTP/1.1"</span> 404 146 <span class="string">"-"</span> <span class="string">"curl/7.58.0"</span> <span class="string">"&#123;\x22error\x22:\x22test error\x22&#125;"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="fluentd"><a href="#fluentd" class="headerlink" title="fluentd"></a>fluentd</h3><ul>
+<li>fluent.conf</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="built_in">source</span>&gt;</span><br><span class="line">  @<span class="built_in">type</span> tail</span><br><span class="line">  tag nginx.access </span><br><span class="line">  format nginx</span><br><span class="line">  format /^(?&lt;remote&gt;[0-9\.]&#123;7,17&#125;) \[(?&lt;time&gt;[^ ]+)\] <span class="string">"([^"</span>]+)<span class="string">" [0-9]&#123;3&#125; [0-9]+ "</span>(?&lt;agent&gt;[^<span class="string">"]+)"</span> <span class="string">"(?&lt;message&gt;&#123;.*&#125;)"</span>$/</span><br><span class="line">  path /var/<span class="built_in">log</span>/nginx/candy_access.log</span><br><span class="line">  pos_file /var/<span class="built_in">log</span>/nginx/candy_access.log.pos</span><br><span class="line">&lt;/<span class="built_in">source</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;match **&gt;</span><br><span class="line">  @<span class="built_in">type</span> elasticsearch</span><br><span class="line">  host elasticsearch</span><br><span class="line">  port 9200</span><br><span class="line">  logstash_format <span class="literal">true</span></span><br><span class="line">  flush_interval 5s</span><br><span class="line">  <span class="comment">#index_name fluentd</span></span><br><span class="line">  type_name fluentd</span><br><span class="line">&lt;/match&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/15/elasticsearch-fluentd-kibana/" data-id="cjt082h2s0006647xne6989pr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/cookbook/2018/11/23/PHP-cs-fixer-for-vim/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          PHP cs fixer for vim
+        
+      </div>
+    </a>
+  
+  
+    <a href="/cookbook/2018/11/08/laravel/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Laravel Tips</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws/">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws-cli/">aws-cli</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-c/">ctrl-c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-v/">ctrl-v</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-beats/">fluent-plugin-beats</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-grep/">fluent-plugin-grep</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mac/">mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/money-format/">money_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-route/">multiple_route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/number-format/">number_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/route/">route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/timezone/">timezone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/tips/">tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/cookbook/tags/angular-css-scss-style-convert/" style="font-size: 10px;">angular, css, scss, style, convert</a> <a href="/cookbook/tags/aws/" style="font-size: 10px;">aws</a> <a href="/cookbook/tags/aws-cli/" style="font-size: 10px;">aws-cli</a> <a href="/cookbook/tags/ctrl-c/" style="font-size: 10px;">ctrl-c</a> <a href="/cookbook/tags/ctrl-v/" style="font-size: 10px;">ctrl-v</a> <a href="/cookbook/tags/docker/" style="font-size: 10px;">docker</a> <a href="/cookbook/tags/elasticsearch/" style="font-size: 20px;">elasticsearch</a> <a href="/cookbook/tags/fluent-plugin-beats/" style="font-size: 10px;">fluent-plugin-beats</a> <a href="/cookbook/tags/fluent-plugin-grep/" style="font-size: 10px;">fluent-plugin-grep</a> <a href="/cookbook/tags/fluentd/" style="font-size: 20px;">fluentd</a> <a href="/cookbook/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/cookbook/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/cookbook/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/cookbook/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/cookbook/tags/linux/" style="font-size: 10px;">linux</a> <a href="/cookbook/tags/mac/" style="font-size: 10px;">mac</a> <a href="/cookbook/tags/money-format/" style="font-size: 10px;">money_format</a> <a href="/cookbook/tags/multiple-extension/" style="font-size: 10px;">multiple_extension</a> <a href="/cookbook/tags/multiple-route/" style="font-size: 10px;">multiple_route</a> <a href="/cookbook/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/cookbook/tags/number-format/" style="font-size: 10px;">number_format</a> <a href="/cookbook/tags/openssl/" style="font-size: 10px;">openssl</a> <a href="/cookbook/tags/route/" style="font-size: 10px;">route</a> <a href="/cookbook/tags/timezone/" style="font-size: 10px;">timezone</a> <a href="/cookbook/tags/tips/" style="font-size: 10px;">tips</a> <a href="/cookbook/tags/todo/" style="font-size: 10px;">todo</a> <a href="/cookbook/tags/trello-smallmodal-expandwidth/" style="font-size: 10px;">trello, smallmodal, expandwidth</a> <a href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/" style="font-size: 10px;">ubuntu 18.04 ubuntu-18.04 tip</a> <a href="/cookbook/tags/ubuntu18-04/" style="font-size: 10px;">ubuntu18.04</a> <a href="/cookbook/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/cookbook/tags/vue/" style="font-size: 10px;">vue</a> <a href="/cookbook/tags/window-top/" style="font-size: 10px;">window.top</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2017/10/">October 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/cookbook/2019/02/04/javascript/">javascript</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/24/mysql/">mysql</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/22/aws-cli/">aws-cli</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/08/fluent-plugin-grep/">fluent-plugin-xxxx</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2018/12/27/mac/">mac</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Sangmin Lee<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/cookbook/" class="mobile-nav-link">Home</a>
+  
+    <a href="/cookbook/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/cookbook/fancybox/jquery.fancybox.css">
+  <script src="/cookbook/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/cookbook/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

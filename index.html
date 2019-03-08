@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Cookbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Cookbook">
+<meta property="og:url" content="https://tangoslee.github.io/cookbook/index.html">
+<meta property="og:site_name" content="Cookbook">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cookbook">
+  
+    <link rel="alternate" href="/cookbook/atom.xml" title="Cookbook" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/cookbook/css/style.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128083707-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-128083707-1');
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/cookbook/" id="logo">Cookbook</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/cookbook/">Home</a>
+        
+          <a class="main-nav-link" href="/cookbook/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/cookbook/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tangoslee.github.io/cookbook"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-javascript" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2019/02/04/javascript/" class="article-date">
+  <time datetime="2019-02-04T16:42:00.000Z" itemprop="datePublished">2019-02-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2019/02/04/javascript/">javascript</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Currency-Format"><a href="#Currency-Format" class="headerlink" title="Currency Format"></a>Currency Format</h1><p>Equivalent to number_format in PHP</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numberFormatter = <span class="keyword">new</span> <span class="built_in">Intl</span>.NumberFormat(<span class="string">'en'</span>, &#123;</span><br><span class="line">    style: <span class="string">'currency'</span>,</span><br><span class="line">    currency: <span class="string">'PHP'</span>,</span><br><span class="line">    minimumFractionDigits: <span class="number">2</span>,</span><br><span class="line">    maximumFractionDigits: <span class="number">2</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(numberFormatter.format(<span class="number">7670.00</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// PHP 7,670.00</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2019/02/04/javascript/" data-id="cjt082h3u001b647xs2amvodq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/money-format/">money_format</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/number-format/">number_format</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mysql" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2019/01/24/mysql/" class="article-date">
+  <time datetime="2019-01-24T14:34:57.000Z" itemprop="datePublished">2019-01-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2019/01/24/mysql/">mysql</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ERROR-1298-HY000-Unknown-or-incorrect-time-zone-‘Asia-Manila’"><a href="#ERROR-1298-HY000-Unknown-or-incorrect-time-zone-‘Asia-Manila’" class="headerlink" title="ERROR 1298 (HY000): Unknown or incorrect time zone: ‘Asia/Manila’"></a>ERROR 1298 (HY000): Unknown or incorrect time zone: ‘Asia/Manila’</h1><ul>
+<li>Cause </li>
+</ul>
+<p>mysql.timezone is empty</p>
+<ul>
+<li>Solution</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mysql_tzinfo_to_sql /usr/share/zoneinfo/|mysql -u root mysql -p</span><br><span class="line">Enter password: </span><br><span class="line">Warning: Unable to load <span class="string">'/usr/share/zoneinfo//iso3166.tab'</span> as time zone. Skipping it.</span><br><span class="line">Warning: Unable to load <span class="string">'/usr/share/zoneinfo//leap-seconds.list'</span> as time zone. Skipping it.</span><br><span class="line">Warning: Unable to load <span class="string">'/usr/share/zoneinfo//zone.tab'</span> as time zone. Skipping it.</span><br><span class="line">Warning: Unable to load <span class="string">'/usr/share/zoneinfo//zone1970.tab'</span> as time zone. Skipping it.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://dev.mysql.com/doc/refman/5.7/en/mysql-tzinfo-to-sql.html" target="_blank" rel="noopener">https://dev.mysql.com/doc/refman/5.7/en/mysql-tzinfo-to-sql.html</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2019/01/24/mysql/" data-id="cjt082h42001f647xlzk255ls" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/timezone/">timezone</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-aws-cli" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2019/01/22/aws-cli/" class="article-date">
+  <time datetime="2019-01-22T11:09:20.000Z" itemprop="datePublished">2019-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2019/01/22/aws-cli/">aws-cli</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Configure"><a href="#Configure" class="headerlink" title="Configure"></a>Configure</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aws configure</span><br></pre></td></tr></table></figure>
+<h2 id="Assign-private-ip-address"><a href="#Assign-private-ip-address" class="headerlink" title="Assign private ip address"></a>Assign private ip address</h2><p>it cannot change subnet</p>
+<ul>
+<li>add privat ip</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aws ec2 assign-private-ip-addresses --network-interface-id eni-e5aa89a3 --private-ip-addresses 10.0.0.82</span><br></pre></td></tr></table></figure>
+<ul>
+<li>add secondary ip addresses</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aws ec2 assign-private-ip-addresses --network-interface-id eni-e5aa89a3 --secondary-private-ip-address-count 2</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-private-ip-addresses.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-private-ip-addresses.html</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2019/01/22/aws-cli/" data-id="cjt082h2l0004647xlpqsc70j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/aws/">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/aws-cli/">aws-cli</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fluent-plugin-grep" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2019/01/08/fluent-plugin-grep/" class="article-date">
+  <time datetime="2019-01-08T22:12:11.000Z" itemprop="datePublished">2019-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2019/01/08/fluent-plugin-grep/">fluent-plugin-xxxx</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Alias"><a href="#Alias" class="headerlink" title="Alias"></a>Alias</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">alias</span> fluentd=<span class="string">'/opt/td-agent/embedded/bin/fluentd'</span></span><br><span class="line"><span class="built_in">alias</span> fluentd-test=<span class="string">'fluentd --dry-run -c /etc/td-agent/td-agent.conf'</span></span><br></pre></td></tr></table></figure>
+<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fluentd-test</span><br></pre></td></tr></table></figure>
+<h3 id="restart"><a href="#restart" class="headerlink" title="restart"></a>restart</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service td-agent restart</span><br></pre></td></tr></table></figure>
+<h2 id="fluent-plugin-grep"><a href="#fluent-plugin-grep" class="headerlink" title="fluent-plugin-grep"></a>fluent-plugin-grep</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NOTE: grep filter is now a built-in plugin. Use the built-in plugin instead of installing this plugin.</span><br><span class="line"></span><br><span class="line">Or, you may find https://github.com/sonots/fluent-plugin-filter_where is more useful.</span><br></pre></td></tr></table></figure>
+<h2 id="fluent-plugin-beats"><a href="#fluent-plugin-beats" class="headerlink" title="fluent-plugin-beats"></a>fluent-plugin-beats</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install ruby-dev rubygems</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">td-agent-gem list --all</span><br><span class="line">td-agent-gem install fluent-plugin-beats --explain</span><br><span class="line">td-agent-gem install fluent-plugin-beats</span><br></pre></td></tr></table></figure>
+<h2 id="Forwarding-over-SSL"><a href="#Forwarding-over-SSL" class="headerlink" title="Forwarding over SSL"></a>Forwarding over SSL</h2><p>fluent-plugin-secure-forward is deprecated. use a built-in plugin in-forward tsl.</p>
+<h3 id="Receiver"><a href="#Receiver" class="headerlink" title="Receiver"></a>Receiver</h3><ul>
+<li>generate Cert</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/td-agent</span><br><span class="line">mkdir certs</span><br><span class="line">openssl req -new -x509 -sha256 -days 1095 -newkey rsa:2048 -keyout certs/fluentd.key -out certs/fluentd.crt</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="built_in">source</span>&gt;</span><br><span class="line">  @<span class="built_in">type</span> forward</span><br><span class="line">  port 24224</span><br><span class="line">  <span class="built_in">bind</span> 0.0.0.0</span><br><span class="line">  &lt;transport tls&gt;</span><br><span class="line">    version TLSv1_2</span><br><span class="line">    ciphers ALL:!aNULL:!eNULL:!SSLv2</span><br><span class="line">    insecure <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">    cert_path /etc/td-agent/certs/fluentd.crt</span><br><span class="line">    private_key_path /etc/td-agent/certs/fluentd.key</span><br><span class="line">    private_key_passphrase MY_PASSPHRASE</span><br><span class="line">    client_cert_auth <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  &lt;/transport&gt;</span><br><span class="line">&lt;/<span class="built_in">source</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;match forward.**&gt;</span><br><span class="line">  @<span class="built_in">type</span> stdout</span><br><span class="line">&lt;/match&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://docs.fluentd.org/v1.0/articles/in_forward" target="_blank" rel="noopener">https://docs.fluentd.org/v1.0/articles/in_forward</a></li>
+</ul>
+<h3 id="Sender"><a href="#Sender" class="headerlink" title="Sender"></a>Sender</h3><p>use a built-in out_forward.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;match forward.**&gt;</span><br><span class="line">  @<span class="built_in">type</span> forward</span><br><span class="line">  send_timeout 60s</span><br><span class="line">  recover_wait 10s</span><br><span class="line">  hard_timeout 60s</span><br><span class="line">  transport tls</span><br><span class="line">  tls_cert_path certs/fluentd.crt </span><br><span class="line">  tls_verify_hostname <span class="literal">false</span>      </span><br><span class="line"></span><br><span class="line">  &lt;server&gt;</span><br><span class="line">    name myserver1</span><br><span class="line">    host 192.168.1.3</span><br><span class="line">    port 24224</span><br><span class="line">    weight 60</span><br><span class="line">  &lt;/server&gt;</span><br><span class="line"></span><br><span class="line">  &lt;secondary&gt;</span><br><span class="line">    @<span class="built_in">type</span> file</span><br><span class="line">    path /var/<span class="built_in">log</span>/fluent/forward-failed</span><br><span class="line">  &lt;/secondary&gt;</span><br><span class="line">&lt;/match&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://docs.fluentd.org/v1.0/articles/out_forward#example-configuration" target="_blank" rel="noopener">https://docs.fluentd.org/v1.0/articles/out_forward#example-configuration</a></li>
+</ul>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a href="https://github.com/sonots/fluent-plugin-grep" target="_blank" rel="noopener">https://github.com/sonots/fluent-plugin-grep</a></li>
+<li><a href="https://github.com/repeatedly/fluent-plugin-beats" target="_blank" rel="noopener">https://github.com/repeatedly/fluent-plugin-beats</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2019/01/08/fluent-plugin-grep/" data-id="cjt082h2w0009647xh9na2xxl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/fluent-plugin-beats/">fluent-plugin-beats</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/fluent-plugin-grep/">fluent-plugin-grep</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mac" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/12/27/mac/" class="article-date">
+  <time datetime="2018-12-27T14:24:15.000Z" itemprop="datePublished">2018-12-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/12/27/mac/">mac</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Remap-copy-and-paste-shortcut-Ctrl-c-Ctrl-v"><a href="#Remap-copy-and-paste-shortcut-Ctrl-c-Ctrl-v" class="headerlink" title="Remap copy and paste shortcut: Ctrl + c, Ctrl + v"></a>Remap copy and paste shortcut: Ctrl + c, Ctrl + v</h2><ul>
+<li>System Preference &gt; Keyboard &gt; Keyboard shortcuts &gt; Application Keyboard Shortcuts &gt; All Applications</li>
+</ul>
+<p>Add </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Copy Ctrl+C</span><br><span class="line">Paste Ctrl+V</span><br><span class="line">Cut Ctrl+X</span><br><span class="line">Select All Ctrl+A</span><br><span class="line">Undo Ctrl+X</span><br><span class="line">Redo Ctrl+Shift+X</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://superuser.com/questions/28078/remap-copy-and-paste-shortcuts-on-a-mac/363355#363355" target="_blank" rel="noopener">https://superuser.com/questions/28078/remap-copy-and-paste-shortcuts-on-a-mac/363355#363355</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/12/27/mac/" data-id="cjt082h40001e647x1jun6h7v" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/ctrl-c/">ctrl-c</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/ctrl-v/">ctrl-v</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/mac/">mac</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-laravel-multiple-routing-files" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/12/01/laravel-multiple-routing-files/" class="article-date">
+  <time datetime="2018-12-01T15:50:57.000Z" itemprop="datePublished">2018-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/12/01/laravel-multiple-routing-files/">Multiple Routing Files in Laravel</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="routes"><a href="#routes" class="headerlink" title="routes"></a>routes</h2><ul>
+<li>app/providers/RouteServiceProvider.php</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> <span class="function"><span class="keyword">function</span> <span class="title">mapWebRoutes</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Route::group([</span><br><span class="line">        <span class="string">'middleware'</span> =&gt; <span class="string">'web'</span>,</span><br><span class="line">        <span class="string">'namespace'</span> =&gt; <span class="keyword">$this</span>-&gt;namespace,</span><br><span class="line">    ], <span class="function"><span class="keyword">function</span> <span class="params">($router)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">require</span> base_path(<span class="string">'routes/another.web.php'</span>);</span><br><span class="line">        <span class="keyword">require</span> base_path(<span class="string">'routes/web.php'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a href="https://www.crewstech.com/blog/2017/11/11/laravel-55-multiple-web-route-files-splitting-them-up" target="_blank" rel="noopener">https://www.crewstech.com/blog/2017/11/11/laravel-55-multiple-web-route-files-splitting-them-up</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/12/01/laravel-multiple-routing-files/" data-id="cjt082h3w001d647xiwuxpkjt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/multiple-route/">multiple_route</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/route/">route</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-PHP-cs-fixer-for-vim" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/23/PHP-cs-fixer-for-vim/" class="article-date">
+  <time datetime="2018-11-23T16:47:52.000Z" itemprop="datePublished">2018-11-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/11/23/PHP-cs-fixer-for-vim/">PHP cs fixer for vim</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install php-codesniffer</span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git /opt/WordPress-Coding-Standards</span><br><span class="line"></span><br><span class="line">sudo phpcs --config-set installed_paths /opt/WordPress-Coding-Standards</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~$ phpcs -i</span><br><span class="line">The installed coding standards are PEAR, PSR2, Squiz, Zend, PSR1, MySource, WordPress-Core, WordPress, WordPress-Docs, WordPress-VIP and WordPress-Extra</span><br></pre></td></tr></table></figure>
+<h2 id="Install-bundle-for-vim"><a href="#Install-bundle-for-vim" class="headerlink" title="Install bundle for vim"></a>Install bundle for vim</h2><ul>
+<li>~/.vimrc</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Bundle <span class="string">'joonty/vim-phpqa.git'</span></span><br><span class="line"><span class="built_in">let</span> g:phpqa_codesniffer_args = <span class="string">"--standard=WordPress"</span></span><br><span class="line"><span class="built_in">let</span> g:phpqa_messdetector_autorun = 0</span><br><span class="line"><span class="built_in">let</span> g:phpqa_codesniffer_autorun = 0</span><br></pre></td></tr></table></figure>
+<h2 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">phpcs --standard=WordPress ./wp-includes/wp-db.php</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">watch <span class="string">'phpcs --standard=WordPress ./wp-includes/wp-db.php'</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/23/PHP-cs-fixer-for-vim/" data-id="cjt082h280000647xlsyca84d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-elasticsearch-fluentd-kibana" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/15/elasticsearch-fluentd-kibana/" class="article-date">
+  <time datetime="2018-11-16T02:29:33.000Z" itemprop="datePublished">2018-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/11/15/elasticsearch-fluentd-kibana/">Elasticsearch + Fluentd + Kibana</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Installation-amp-amp-Configuration"><a href="#Installation-amp-amp-Configuration" class="headerlink" title="Installation &amp;&amp; Configuration"></a>Installation &amp;&amp; Configuration</h2><h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><ul>
+<li><p>nginx.conf</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">  ...</span><br><span class="line">  log_format logdata <span class="string">'$remote_addr [$time_iso8601] '</span></span><br><span class="line">                  <span class="string">'"$request" $status $body_bytes_sent '</span></span><br><span class="line">                  <span class="string">'"$http_user_agent" "$request_body"'</span>;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>sites/casndy.conf</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">log</span>/push &#123;</span><br><span class="line">    access_log /var/<span class="built_in">log</span>/nginx/candy_access.log logdata;</span><br><span class="line">    proxy_pass http://127.0.0.1/postdata;</span><br><span class="line">  &#125;   </span><br><span class="line"></span><br><span class="line">  location = /postdata &#123;</span><br><span class="line">    <span class="comment"># turn off logging here to avoid double logging</span></span><br><span class="line">    access_log off;</span><br><span class="line">    <span class="built_in">return</span> 200;</span><br><span class="line">  &#125;   </span><br><span class="line">  <span class="comment"># https://stackoverflow.com/questions/17609472/really-logging-the-post-request-body-instead-of-with-nginx</span></span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<ul>
+<li>test</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ curl -H <span class="string">'Content-Type: application/json'</span> -X POST http://candylog.local.cd/<span class="built_in">log</span>/push -d <span class="string">'&#123;"error":"test error"&#125;'</span></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;</span><br><span class="line">&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>access_log</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">172.20.0.1 - - [15/Nov/2018:18:10:17 +0000] <span class="string">"POST /log/push HTTP/1.1"</span> 404 146 <span class="string">"-"</span> <span class="string">"curl/7.58.0"</span> <span class="string">"&#123;\x22error\x22:\x22test error\x22&#125;"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="fluentd"><a href="#fluentd" class="headerlink" title="fluentd"></a>fluentd</h3><ul>
+<li>fluent.conf</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="built_in">source</span>&gt;</span><br><span class="line">  @<span class="built_in">type</span> tail</span><br><span class="line">  tag nginx.access </span><br><span class="line">  format nginx</span><br><span class="line">  format /^(?&lt;remote&gt;[0-9\.]&#123;7,17&#125;) \[(?&lt;time&gt;[^ ]+)\] <span class="string">"([^"</span>]+)<span class="string">" [0-9]&#123;3&#125; [0-9]+ "</span>(?&lt;agent&gt;[^<span class="string">"]+)"</span> <span class="string">"(?&lt;message&gt;&#123;.*&#125;)"</span>$/</span><br><span class="line">  path /var/<span class="built_in">log</span>/nginx/candy_access.log</span><br><span class="line">  pos_file /var/<span class="built_in">log</span>/nginx/candy_access.log.pos</span><br><span class="line">&lt;/<span class="built_in">source</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;match **&gt;</span><br><span class="line">  @<span class="built_in">type</span> elasticsearch</span><br><span class="line">  host elasticsearch</span><br><span class="line">  port 9200</span><br><span class="line">  logstash_format <span class="literal">true</span></span><br><span class="line">  flush_interval 5s</span><br><span class="line">  <span class="comment">#index_name fluentd</span></span><br><span class="line">  type_name fluentd</span><br><span class="line">&lt;/match&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/15/elasticsearch-fluentd-kibana/" data-id="cjt082h2s0006647xne6989pr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-laravel" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/08/laravel/" class="article-date">
+  <time datetime="2018-11-08T21:15:38.000Z" itemprop="datePublished">2018-11-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/11/08/laravel/">Laravel Tips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Must-have-Items"><a href="#Must-have-Items" class="headerlink" title="Must have Items"></a>Must have Items</h2><ul>
+<li>debug</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require barryvdh/laravel-debugbar --dev</span><br></pre></td></tr></table></figure>
+<h2 id="Laravel-Blade-Snippets-1-18-0-block-in-a-single-line-problem"><a href="#Laravel-Blade-Snippets-1-18-0-block-in-a-single-line-problem" class="headerlink" title="Laravel Blade Snippets 1.18.0  @ block in a single line problem"></a>Laravel Blade Snippets 1.18.0  @ block in a single line problem</h2><ul>
+<li>edit ~/.vscode/extensions/onecentlin.laravel-blade-1.18.0/out/src/services/BladeFormatter.js</li>
+</ul>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@@ -21,6 +21,7 @@</span></span><br><span class="line">             return "\n" + match;</span><br><span class="line">         &#125;);</span><br><span class="line">         output = output.replace(/(\s*)\@include/g, "\n" + this.indentPattern + "@include");</span><br><span class="line"><span class="addition">+        output = output.replace(/\s*(@[a-z]+)\n/g, "\n" + this.indentPattern + "$1\n")</span></span><br><span class="line">         output = output.replace(/(\s*)\@endsection/g, "\n@endsection\n");</span><br><span class="line">         // fix #57 url extra space after formatting</span><br><span class="line">         output = output.replace(/url\(\"(\s*)/g, "url\(\"");</span><br></pre></td></tr></table></figure>
+<ul>
+<li>before</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top-right links"</span>&gt;</span></span><br><span class="line">    @auth</span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url('/home') &#125;&#125;"</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">a</span>&gt;</span> @else</span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; route('login') &#125;&#125;"</span>&gt;</span>Login<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; route('register') &#125;&#125;"</span>&gt;</span>Register<span class="tag">&lt;/<span class="name">a</span>&gt;</span> @endauth</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>after</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top-right links"</span>&gt;</span></span><br><span class="line">@auth</span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url('/home') &#125;&#125;"</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">@else</span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; route('login') &#125;&#125;"</span>&gt;</span>Login<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; route('register') &#125;&#125;"</span>&gt;</span>Register<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">@endauth</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="custom-guard"><a href="#custom-guard" class="headerlink" title="custom guard"></a>custom guard</h3><ul>
+<li><a href="https://scotch.io/@panchaljaymin/laravel-custom-authentication-using-guards" target="_blank" rel="noopener">https://scotch.io/@panchaljaymin/laravel-custom-authentication-using-guards</a></li>
+</ul>
+<h2 id="Clear-cache"><a href="#Clear-cache" class="headerlink" title="Clear cache"></a>Clear cache</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">composer dump-autoload</span><br><span class="line">php artisan clear-compiled</span><br><span class="line">php artisan cache:clear</span><br><span class="line">php artisan route:clear</span><br><span class="line">php artisan view:clear</span><br><span class="line">php artisan config:clear</span><br><span class="line">php artisan optimize  // <span class="built_in">command</span> not found <span class="keyword">in</span> 6.5</span><br></pre></td></tr></table></figure>
+<h2 id="Session-examples"><a href="#Session-examples" class="headerlink" title="Session examples"></a>Session examples</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">$value = $request-&gt;session()-&gt;get(<span class="string">'key'</span>, <span class="string">'default'</span>);</span><br><span class="line">$value = $request-&gt;session()-&gt;get(<span class="string">'key'</span>, <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'default'</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$data = $request-&gt;session()-&gt;all();</span><br><span class="line">$request-&gt;session()-&gt;has(<span class="string">'key'</span>)         <span class="comment">// false if the value is null</span></span><br><span class="line">$request-&gt;session()-&gt;exists(<span class="string">'key'</span>)      <span class="comment">// true even the value is null</span></span><br><span class="line"></span><br><span class="line">$request-&gt;session()-&gt;put(<span class="string">'key'</span>, <span class="string">'value'</span>);</span><br><span class="line"></span><br><span class="line">$value = $request-&gt;session()-&gt;pull(<span class="string">'key'</span>, <span class="string">'default'</span>);   <span class="comment">// fetch value and delete</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// delete</span></span><br><span class="line">$request-&gt;session()-&gt;forget(<span class="string">'key'</span>);</span><br><span class="line">$request-&gt;session()-&gt;forget([<span class="string">'key1'</span>, <span class="string">'key2'</span>]);</span><br><span class="line">$request-&gt;session()-&gt;flush();</span><br><span class="line"></span><br><span class="line"><span class="comment">// live until next following request</span></span><br><span class="line">$request-&gt;session()-&gt;flash(<span class="string">'status'</span>, <span class="string">'Task was successful!'</span>);</span><br><span class="line">$request-&gt;session()-&gt;keep([<span class="string">'key1'</span>, <span class="string">'key2'</span>]);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://laravel.com/docs/5.7/session" target="_blank" rel="noopener">https://laravel.com/docs/5.7/session</a></li>
+</ul>
+<h2 id="Tutorials"><a href="#Tutorials" class="headerlink" title="Tutorials"></a>Tutorials</h2><ul>
+<li><a href="https://laravel-news.com/your-first-laravel-application" target="_blank" rel="noopener">https://laravel-news.com/your-first-laravel-application</a></li>
+<li><a href="https://medium.com/js-dojo/using-vuex-in-modules-in-a-modular-laravel-application-24b8ad7905da" target="_blank" rel="noopener">https://medium.com/js-dojo/using-vuex-in-modules-in-a-modular-laravel-application-24b8ad7905da</a></li>
+<li><a href="https://medium.com/js-dojo/using-vue-vuex-vue-router-with-laravel-2c0962c97416" target="_blank" rel="noopener">https://medium.com/js-dojo/using-vue-vuex-vue-router-with-laravel-2c0962c97416</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/08/laravel/" data-id="cjt082h34000h647xcfj9s2uf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vscode-cookbook" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/05/vscode-cookbook/" class="article-date">
+  <time datetime="2018-11-05T05:13:43.000Z" itemprop="datePublished">2018-11-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/11/05/vscode-cookbook/">Vscode Cookbook</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Run-multiple-vscode-in-dedicaated-environments-Ubuntu"><a href="#Run-multiple-vscode-in-dedicaated-environments-Ubuntu" class="headerlink" title="Run multiple vscode in dedicaated environments (Ubuntu)"></a>Run multiple vscode in dedicaated environments (Ubuntu)</h2><p>Let’s make multiple vscode environements that have own extensions and configuration.</p>
+<h3 id="System-Default"><a href="#System-Default" class="headerlink" title="System Default"></a>System Default</h3><ul>
+<li><p>Default user data directory</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.vscode</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Default extention directory</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.vscode/extentions</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Run vs code with a specific directory</p>
+<p>e.g) $APP_ROOT</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/code/code --user-data-dir <span class="variable">$APP_ROOT</span> --extensionHomePath <span class="variable">$APP_ROOT</span>/extensions</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="VSCode-for-Angular"><a href="#VSCode-for-Angular" class="headerlink" title="VSCode for Angular"></a>VSCode for Angular</h3><p>user-data-dir: ~/.vscode-angular</p>
+<ul>
+<li><p>Make a desktop launcher  (~/.local/share/applications/vscode-angular.desktop)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Version=1.0</span><br><span class="line">Type=Application</span><br><span class="line">Name=Visual Studio Code <span class="keyword">for</span> Angular</span><br><span class="line">Icon=/opt/icons/vscode-angular.png</span><br><span class="line">Path=/usr/share/code</span><br><span class="line">Exec=/bin/sh -c <span class="string">"/usr/share/code/code --user-data-dir <span class="variable">$HOME</span>/.vscode-angular --extensionHomePath <span class="variable">$HOME</span>/.vscode-angular/extensions"</span></span><br><span class="line">StartupNotify=<span class="literal">false</span></span><br><span class="line">OnlyShowIn=Unity;</span><br><span class="line">X-UnityGenerated=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>enjoy~~</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/05/vscode-cookbook/" data-id="cjt082h45001k647xnvjdauu5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/cookbook/page/2/">2</a><a class="extend next" rel="next" href="/cookbook/page/2/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws/">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws-cli/">aws-cli</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-c/">ctrl-c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-v/">ctrl-v</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-beats/">fluent-plugin-beats</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-grep/">fluent-plugin-grep</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mac/">mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/money-format/">money_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-route/">multiple_route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/number-format/">number_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/route/">route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/timezone/">timezone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/tips/">tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/cookbook/tags/angular-css-scss-style-convert/" style="font-size: 10px;">angular, css, scss, style, convert</a> <a href="/cookbook/tags/aws/" style="font-size: 10px;">aws</a> <a href="/cookbook/tags/aws-cli/" style="font-size: 10px;">aws-cli</a> <a href="/cookbook/tags/ctrl-c/" style="font-size: 10px;">ctrl-c</a> <a href="/cookbook/tags/ctrl-v/" style="font-size: 10px;">ctrl-v</a> <a href="/cookbook/tags/docker/" style="font-size: 10px;">docker</a> <a href="/cookbook/tags/elasticsearch/" style="font-size: 20px;">elasticsearch</a> <a href="/cookbook/tags/fluent-plugin-beats/" style="font-size: 10px;">fluent-plugin-beats</a> <a href="/cookbook/tags/fluent-plugin-grep/" style="font-size: 10px;">fluent-plugin-grep</a> <a href="/cookbook/tags/fluentd/" style="font-size: 20px;">fluentd</a> <a href="/cookbook/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/cookbook/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/cookbook/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/cookbook/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/cookbook/tags/linux/" style="font-size: 10px;">linux</a> <a href="/cookbook/tags/mac/" style="font-size: 10px;">mac</a> <a href="/cookbook/tags/money-format/" style="font-size: 10px;">money_format</a> <a href="/cookbook/tags/multiple-extension/" style="font-size: 10px;">multiple_extension</a> <a href="/cookbook/tags/multiple-route/" style="font-size: 10px;">multiple_route</a> <a href="/cookbook/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/cookbook/tags/number-format/" style="font-size: 10px;">number_format</a> <a href="/cookbook/tags/openssl/" style="font-size: 10px;">openssl</a> <a href="/cookbook/tags/route/" style="font-size: 10px;">route</a> <a href="/cookbook/tags/timezone/" style="font-size: 10px;">timezone</a> <a href="/cookbook/tags/tips/" style="font-size: 10px;">tips</a> <a href="/cookbook/tags/todo/" style="font-size: 10px;">todo</a> <a href="/cookbook/tags/trello-smallmodal-expandwidth/" style="font-size: 10px;">trello, smallmodal, expandwidth</a> <a href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/" style="font-size: 10px;">ubuntu 18.04 ubuntu-18.04 tip</a> <a href="/cookbook/tags/ubuntu18-04/" style="font-size: 10px;">ubuntu18.04</a> <a href="/cookbook/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/cookbook/tags/vue/" style="font-size: 10px;">vue</a> <a href="/cookbook/tags/window-top/" style="font-size: 10px;">window.top</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2017/10/">October 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/cookbook/2019/02/04/javascript/">javascript</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/24/mysql/">mysql</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/22/aws-cli/">aws-cli</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/08/fluent-plugin-grep/">fluent-plugin-xxxx</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2018/12/27/mac/">mac</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Sangmin Lee<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/cookbook/" class="mobile-nav-link">Home</a>
+  
+    <a href="/cookbook/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/cookbook/fancybox/jquery.fancybox.css">
+  <script src="/cookbook/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/cookbook/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

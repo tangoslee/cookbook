@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Cookbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Cookbook">
+<meta property="og:url" content="https://tangoslee.github.io/cookbook/page/2/index.html">
+<meta property="og:site_name" content="Cookbook">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cookbook">
+  
+    <link rel="alternate" href="/cookbook/atom.xml" title="Cookbook" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/cookbook/css/style.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128083707-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-128083707-1');
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/cookbook/" id="logo">Cookbook</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/cookbook/">Home</a>
+        
+          <a class="main-nav-link" href="/cookbook/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/cookbook/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tangoslee.github.io/cookbook"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Vue-Cookbook" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/01/Vue-Cookbook/" class="article-date">
+  <time datetime="2018-11-01T19:18:42.000Z" itemprop="datePublished">2018-11-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/11/01/Vue-Cookbook/">Vue Cookbook</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g @vue/cli-init</span><br></pre></td></tr></table></figure>
+<h2 id="Create-a-new-project"><a href="#Create-a-new-project" class="headerlink" title="Create a new project"></a>Create a new project</h2>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack &lt;project-name&gt; or</span><br><span class="line">vue create &lt;project-name&gt;</span><br><span class="line"><span class="built_in">cd</span>  &lt;project-name&gt;</span><br><span class="line"></span><br><span class="line">npm install --save vuex</span><br><span class="line">npm install --save bootstrap font-awesome</span><br><span class="line">npm install --save axios vue-axios</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Build with base-href</p>
+<p>Make a vue.config.js in the application root.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  <span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  baseUrl: process.env.NODE_ENV === <span class="string">'production'</span></span><br><span class="line">    ? <span class="string">'/&lt;your-base-href&gt;/'</span></span><br><span class="line">    : <span class="string">'/'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Configure-deploy-setting-for-gh-pages"><a href="#Configure-deploy-setting-for-gh-pages" class="headerlink" title="Configure deploy setting for gh-pages"></a>Configure deploy setting for gh-pages</h2>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i angular-cli-ghpages --save-dev</span><br></pre></td></tr></table></figure>
+  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">  ...</span><br><span class="line">  "deploy": "npx ngh --no-silent"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="How-to-watch-observe-state-values"><a href="#How-to-watch-observe-state-values" class="headerlink" title="How to watch, observe state values"></a>How to watch, observe state values</h2><ul>
+<li>use watch</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span>() &#123;</span><br><span class="line"></span><br><span class="line">  computed: &#123;</span><br><span class="line">    count() &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.$store.gettters.count;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  watch: &#123;</span><br><span class="line">    count(newCount, oldCount) &#123;</span><br><span class="line">      <span class="keyword">this</span>.count = newCount;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>use mapGetters</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; mapGetters &#125; <span class="keyword">from</span> <span class="string">'vuex'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  computed: &#123;</span><br><span class="line">      ...mapGetters(&#123;</span><br><span class="line">        count: <span class="string">'getCount'</span></span><br><span class="line">      &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// store</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> getters = &#123;</span><br><span class="line">  getCount: <span class="function"><span class="params">state</span> =&gt;</span> state.xxxx.length,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Remove-bang-on-URL"><a href="#Remove-bang-on-URL" class="headerlink" title="Remove #bang on URL"></a>Remove #bang on URL</h2><p>Add router opotions { mode: ‘history’}</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  mode: <span class="string">'history'</span>,</span><br><span class="line">  routes: [&#123;</span><br><span class="line">    path: <span class="string">'/'</span>,</span><br><span class="line">    name: <span class="string">'HelloWorld'</span>,</span><br><span class="line">    component: HelloWorld</span><br><span class="line">  &#125;]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="ESlint-for-vscode"><a href="#ESlint-for-vscode" class="headerlink" title="ESlint for vscode"></a>ESlint for vscode</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">"editor.formatOnSave": false,</span><br><span class="line">"javascript.format.enable": false,</span><br><span class="line">"eslint.autoFixOnSave": true,</span><br><span class="line">"eslint.alwaysShowStatus": true,</span><br><span class="line">"eslint.options": &#123;</span><br><span class="line">  "extensions": [ ".html", ".js", ".vue", ".jsx" ]</span><br><span class="line">&#125;,</span><br><span class="line">"eslint.validate": [</span><br><span class="line">  &#123; "language": "html", "autoFix": true &#125;,</span><br><span class="line">  &#123; "language": "vue", "autoFix": true &#125;,</span><br><span class="line">  &#123; "language": "javascript", "autoFix": true &#125;,</span><br><span class="line">  &#123; <span class="attr">"language"</span>: <span class="string">"javascriptreact"</span>, <span class="attr">"autoFix"</span>: <span class="literal">true</span> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://stackoverflow.com/questions/52102705/cant-get-correct-autoformat-on-save-in-visual-studio-code-with-eslint-and-prett" target="_blank" rel="noopener">https://stackoverflow.com/questions/52102705/cant-get-correct-autoformat-on-save-in-visual-studio-code-with-eslint-and-prett</a></li>
+</ul>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><ul>
+<li><a href="https://stackoverflow.com/questions/43270159/vuejs-2-how-to-watch-store-values-from-vuex" target="_blank" rel="noopener">https://stackoverflow.com/questions/43270159/vuejs-2-how-to-watch-store-values-from-vuex</a></li>
+<li><a href="https://medium.com/@codetheorist/vue-up-your-github-pages-the-right-way-955486220418" target="_blank" rel="noopener">https://medium.com/@codetheorist/vue-up-your-github-pages-the-right-way-955486220418</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/01/Vue-Cookbook/" data-id="cjt082h2c0001647x9ffwygih" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/vue/">vue</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/10/19/hello-world/" class="article-date">
+  <time datetime="2018-10-19T06:07:38.730Z" itemprop="datePublished">2018-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/10/19/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/19/hello-world/" data-id="cjt082h32000e647xz7m0mwu2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ubuntu-18-04" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/10/19/ubuntu-18-04/" class="article-date">
+  <time datetime="2018-10-19T05:57:34.000Z" itemprop="datePublished">2018-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/10/19/ubuntu-18-04/">Ubuntu 18.04</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Troubleshooting-Upgrade-16-04-to-18-04"><a href="#Troubleshooting-Upgrade-16-04-to-18-04" class="headerlink" title="Troubleshooting Upgrade 16.04 to 18.04"></a>Troubleshooting Upgrade 16.04 to 18.04</h1><h2 id="Printer-does-not-working"><a href="#Printer-does-not-working" class="headerlink" title="Printer does not working"></a>Printer does not working</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rmdir /usr/share/ghostscript/9.25/iccprofiles</span><br><span class="line">sudo apt-get install --reinstall libgs9-common</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://askubuntu.com/questions/1081885/printer-stopped-working-after-upgrade-16-04-to-18-04" target="_blank" rel="noopener">https://askubuntu.com/questions/1081885/printer-stopped-working-after-upgrade-16-04-to-18-04</a></li>
+</ul>
+<h2 id="Clear-Systemd-journal-Log"><a href="#Clear-Systemd-journal-Log" class="headerlink" title="Clear Systemd journal Log"></a>Clear Systemd journal Log</h2><ul>
+<li><p>location</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/var/<span class="built_in">log</span>/journal</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Clear journal with size, age</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">journalctl --vacuum-time=7d</span><br><span class="line">journalctl --vacuum-size=50M</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://ma.ttias.be/clear-systemd-journal/" target="_blank" rel="noopener">https://ma.ttias.be/clear-systemd-journal/</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/19/ubuntu-18-04/" data-id="cjt082h44001i647xiyulg0fd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-elasticsearch" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/10/10/elasticsearch/" class="article-date">
+  <time datetime="2018-10-10T23:00:32.000Z" itemprop="datePublished">2018-10-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/10/10/elasticsearch/">elasticsearch</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Start-from-docker"><a href="#Start-from-docker" class="headerlink" title="Start from docker"></a>Start from docker</h2><ul>
+<li>Pulling the image</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull docker.elastic.co/elasticsearch/elasticsearch:6.4.2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Run in Development Mode</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 9200:9200 -p 9300:9300 -e <span class="string">"discovery.type=single-node"</span> docker.elastic.co/elasticsearch/elasticsearch:6.4.2</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Dockerfile</p>
+<figure class="highlight docker"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> docker.elastic.co/elasticsearch/elasticsearch:<span class="number">6.4</span>.<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ENV</span> ES_HOME /opt/elasticsearch</span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> <span class="variable">$&#123;ES_HOME&#125;</span></span></span><br><span class="line"><span class="bash"></span></span><br><span class="line"><span class="bash">ENV discovery.type single-node</span></span><br><span class="line"><span class="bash">ENV ES_HEAP_SIZE 512m</span></span><br><span class="line"><span class="bash">ENV MAX_OPEN_FILES=65535</span></span><br><span class="line"><span class="bash">ENV MAX_LOCKED_MEMORY=unlimited</span></span><br><span class="line"><span class="bash"></span></span><br><span class="line"><span class="bash"><span class="comment">#VOLUME $&#123;ES_HOME&#125;/es-data</span></span></span><br><span class="line"><span class="bash"></span></span><br><span class="line"><span class="bash">EXPOSE 9200 9300</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Run</p>
+</li>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d --build elasticsearch</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Test</p>
+</li>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -XPUT http://localhost:9200/<span class="built_in">test</span>/_doc/1 -H <span class="string">'Content-Type: application/json'</span> -d <span class="string">'&#123;"id": 1, "name": "tom" &#125;'</span></span><br><span class="line"></span><br><span class="line">&#123;<span class="string">"_index"</span>:<span class="string">"test"</span>,<span class="string">"_type"</span>:<span class="string">"_doc"</span>,<span class="string">"_id"</span>:<span class="string">"1"</span>,<span class="string">"_version"</span>:1,<span class="string">"result"</span>:<span class="string">"created"</span>,<span class="string">"_shards"</span>:&#123;<span class="string">"total"</span>:2,<span class="string">"successful"</span>:1,<span class="string">"failed"</span>:0&#125;,<span class="string">"_seq_no"</span>:0,<span class="string">"_primary_term"</span>:1&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl http://localhost:9200/<span class="built_in">test</span>/_doc/1</span><br><span class="line"></span><br><span class="line">&#123;<span class="string">"_index"</span>:<span class="string">"test"</span>,<span class="string">"_type"</span>:<span class="string">"_doc"</span>,<span class="string">"_id"</span>:<span class="string">"1"</span>,<span class="string">"_version"</span>:1,<span class="string">"found"</span>:<span class="literal">true</span>,<span class="string">"_source"</span>:&#123;<span class="string">"id"</span>: 1, <span class="string">"name"</span>: <span class="string">"tom"</span> &#125;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><ul>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html" target="_blank" rel="noopener">https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/10/elasticsearch/" data-id="cjt082h2z000a647x887i78jn" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-todo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/10/09/todo/" class="article-date">
+  <time datetime="2018-10-09T12:26:56.000Z" itemprop="datePublished">2018-10-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/10/09/todo/">Todo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h1><h2 id="What-is-an-event-loop"><a href="#What-is-an-event-loop" class="headerlink" title="What is an event loop?"></a>What is an event loop?</h2><ul>
+<li><a href="https://vimeo.com/96425312" target="_blank" rel="noopener">https://vimeo.com/96425312</a></li>
+</ul>
+<h2 id="Angular-amp-NgRx"><a href="#Angular-amp-NgRx" class="headerlink" title="Angular &amp; NgRx"></a>Angular &amp; NgRx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @ngrx/&#123;store,store-devtools,entity,effects&#125; --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://coursetro.com/posts/code/151/Angular-Ngrx-Store-Tutorial---Learn-Angular-State-Management" target="_blank" rel="noopener">Store Tutorial</a></li>
+<li><a href="https://github.com/ngrx/platform/blob/master/docs/entity/adapter.md" target="_blank" rel="noopener">Adapter Tutorial</a></li>
+<li><a href="http://candordeveloper.com/2017/02/15/how-to-build-a-real-world-angular-app-with-ngrx-store-part-i-define-the-state/" target="_blank" rel="noopener">http://candordeveloper.com/2017/02/15/how-to-build-a-real-world-angular-app-with-ngrx-store-part-i-define-the-state/</a></li>
+</ul>
+<h2 id="Framesworks"><a href="#Framesworks" class="headerlink" title="Framesworks"></a>Framesworks</h2><ul>
+<li>Aurelia, VueJS, React</li>
+</ul>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><ul>
+<li>Understanding of BEM, SMACS or OOCSS coding principles</li>
+<li>Working knowledge of WCAG 2.0 accessibility standards (Level AA)</li>
+</ul>
+<h2 id="Understanding-of-BEM-SMACS-or-OOCSS-coding-principles"><a href="#Understanding-of-BEM-SMACS-or-OOCSS-coding-principles" class="headerlink" title="Understanding of BEM, SMACS or OOCSS coding principles"></a>Understanding of BEM, SMACS or OOCSS coding principles</h2><h3 id="BEM-Block-Element-Modifier-Naming-convention-of-CSS-classes"><a href="#BEM-Block-Element-Modifier-Naming-convention-of-CSS-classes" class="headerlink" title="BEM (Block Element Modifier) ::= Naming convention of CSS classes"></a>BEM (Block Element Modifier) ::= Naming convention of CSS classes</h3><p>e.g)<br> block    ::= login form<br> element  ::= login button<br> modifier ::= mobile version of login form</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.block</span> &#123;&#125;</span><br><span class="line"><span class="selector-class">.block__element</span> &#123;&#125;</span><br><span class="line"><span class="selector-class">.block--modifier</span> &#123;&#125;</span><br><span class="line"><span class="selector-class">.block__element--modifier</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="SMACS-Scalable-and-Modular-Architecture-for-CSS-CSS-style-guide"><a href="#SMACS-Scalable-and-Modular-Architecture-for-CSS-CSS-style-guide" class="headerlink" title="SMACS (Scalable and Modular Architecture for CSS) ::= CSS style guide"></a>SMACS (Scalable and Modular Architecture for CSS) ::= CSS style guide</h3><ul>
+<li>Base</li>
+<li>Layout</li>
+<li>Module</li>
+<li>State</li>
+<li>Theme</li>
+</ul>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><ul>
+<li><a href="https://smacss.com/" target="_blank" rel="noopener">https://smacss.com/</a></li>
+<li><a href="https://www.sitepoint.com/bem-smacss-advice-from-developers/" target="_blank" rel="noopener">https://www.sitepoint.com/bem-smacss-advice-from-developers/</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/09/todo/" data-id="cjt082h43001h647xhduthkph" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/todo/">todo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-how-to-set-ssl-certificate-to-localhost-in-angular5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/" class="article-date">
+  <time datetime="2018-10-04T17:03:54.000Z" itemprop="datePublished">2018-10-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/">How to Create Self-signed SSL Certificate in my Angular5 App (localhost)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Let’s make self-signed certificate and set it for angular 6 <a href="https://localhost:4200" target="_blank" rel="noopener">https://localhost:4200</a> server.</p>
+<h1 id="Move-to-the-project-and-create-a-directory"><a href="#Move-to-the-project-and-create-a-directory" class="headerlink" title="Move to the project and create a directory"></a>Move to the project and create a directory</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> [project_name]</span><br><span class="line">mkdir certs</span><br></pre></td></tr></table></figure>
+<h1 id="Generate-a-self-signed-cert"><a href="#Generate-a-self-signed-cert" class="headerlink" title="Generate a self-signed cert"></a>Generate a self-signed cert</h1><p>-days 3650 : 10 years expire time<br>-nodes : skip passphrase</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl req -x509 -newkey rsa:4096 -sha256 -keyout certs/localhost.key.pem -out certs/localhost.cert.pem -days 3650 -nodes -subj <span class="string">'/CN=localhost:4200'</span></span><br></pre></td></tr></table></figure>
+<h1 id="Add-package-json"><a href="#Add-package-json" class="headerlink" title="Add package.json"></a>Add package.json</h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">  "start:ssl": "ng serve --aot --ssl --ssl-key './certs/localhost.key.pem' --ssl-cert './certs/localhost.cert.pem'",</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h1 id="Run-local-SSL-server"><a href="#Run-local-SSL-server" class="headerlink" title="Run local SSL server"></a>Run local SSL server</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run start:ssl</span><br></pre></td></tr></table></figure>
+<h1 id="Open-the-browser-https-localhost-4200"><a href="#Open-the-browser-https-localhost-4200" class="headerlink" title="Open the browser https://localhost:4200"></a>Open the browser <a href="https://localhost:4200" target="_blank" rel="noopener">https://localhost:4200</a></h1><h1 id="Useful-Links"><a href="#Useful-Links" class="headerlink" title="Useful Links"></a>Useful Links</h1><ul>
+<li>[Open SSL Commands] <a href="https://gist.github.com/webtobesocial/5313b0d7abc25e06c2d78f8b767d4bc3" target="_blank" rel="noopener">https://gist.github.com/webtobesocial/5313b0d7abc25e06c2d78f8b767d4bc3</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/" data-id="cjt082h3r001a647xi6b1nao7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/tips/">tips</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-change-default-style-from-css-to-scss-in-angular" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/" class="article-date">
+  <time datetime="2018-09-30T14:24:48.000Z" itemprop="datePublished">2018-09-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/">Change Default Style From CSS to SCSS in Angular</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="New-project"><a href="#New-project" class="headerlink" title="New project"></a>New project</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng new project --style=scss</span><br></pre></td></tr></table></figure>
+<h1 id="Existing-project"><a href="#Existing-project" class="headerlink" title="Existing project"></a>Existing project</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng config schematics.@schematics/angular:component.styleext scss</span><br></pre></td></tr></table></figure>
+<p>Edit <em>.css to </em>.scss in angular.json</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">"styles": [</span><br><span class="line">    "src/styles.scss",</span><br></pre></td></tr></table></figure>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><a href="https://stackoverflow.com/questions/40726081/angular-cli-from-css-to-scss" target="_blank" rel="noopener">https://stackoverflow.com/questions/40726081/angular-cli-from-css-to-scss</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/" data-id="cjt082h2f0002647xv9jggd52" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-how-to-expand-trello-modal-width" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/09/18/how-to-expand-trello-modal-width/" class="article-date">
+  <time datetime="2018-09-18T11:53:28.000Z" itemprop="datePublished">2018-09-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/09/18/how-to-expand-trello-modal-width/">How To Expand Trello Modal Width</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Simply put below commands in the developer console, while the modal is opening.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> w = <span class="string">'90%'</span>;<span class="built_in">document</span>.querySelector(<span class="string">'.window'</span>).style.width=w;<span class="built_in">document</span>.querySelector(<span class="string">'.window-main-col'</span>).style.width=w;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Before </p>
+<img src="/cookbook/2018/09/18/how-to-expand-trello-modal-width/origin-modal.png">
+</li>
+<li><p>After</p>
+<img src="/cookbook/2018/09/18/how-to-expand-trello-modal-width/wide-modal.png">
+</li>
+</ul>
+<p>;-)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/09/18/how-to-expand-trello-modal-width/" data-id="cjt082h30000c647xc5pug0v9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-how-to-set-l2tp-vpn-for-ubuntu-16-04" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/" class="article-date">
+  <time datetime="2018-07-14T07:19:05.000Z" itemprop="datePublished">2018-07-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/">How to Set L2TP VPN for Ubuntu 16.04</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <img src="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn1.png">
+<img src="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn2.png">
+<img src="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn3.png">
+<img src="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn4.png">
+<img src="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn5.png">
+<ul>
+<li>Phase1 Algorithms: 3des-sha1-modp1024!</li>
+<li>Phase2 Algorithms: 3des-sha1!</li>
+</ul>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><a href="https://unix.stackexchange.com/questions/355848/ipsec-over-l2tp-received-no-proposal-chosen-error-notify" target="_blank" rel="noopener">https://unix.stackexchange.com/questions/355848/ipsec-over-l2tp-received-no-proposal-chosen-error-notify</a></li>
+<li><a href="https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/clients.md" target="_blank" rel="noopener">https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/clients.md</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/" data-id="cjt082h33000g647xedpme0h2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-detecting-element-is-in-a-specific-section-javascript" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/" class="article-date">
+  <time datetime="2017-10-04T17:03:54.000Z" itemprop="datePublished">2017-10-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/">Detecting an Element is in a specific position on the screen</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Detecting-an-Element-Is-in-the-Screen"><a href="#Detecting-an-Element-Is-in-the-Screen" class="headerlink" title="Detecting an Element Is in the Screen."></a>Detecting an Element Is in the Screen.</h2><h3 id="Scenario"><a href="#Scenario" class="headerlink" title="Scenario"></a>Scenario</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> Out of the screen       in the screen (particially)   in the screen (strictly)</span><br><span class="line"></span><br><span class="line"> +----------------+</span><br><span class="line"> |element         |</span><br><span class="line"> |                |</span><br><span class="line"> +----------------+         +--------------+</span><br><span class="line">                            | element      |</span><br><span class="line">+------------------+     +--------------------+      +--------------------+</span><br><span class="line">|                  |     |  +--------------+  |      |                    |</span><br><span class="line">|                  |     |                    |      |  +--------------+  |</span><br><span class="line">|                  |     |                    |      |  | element      |  |</span><br><span class="line">| screen           |     |  screen            |      |  |              |  |</span><br><span class="line">|                  |     |                    |      |  +--------------+  |</span><br><span class="line">|                  |     |                    |      |   screen           |</span><br><span class="line">|                  |     |                    |      |                    |</span><br><span class="line">+------------------+     +--------------------+      +--------------------+</span><br><span class="line"></span><br><span class="line"> +----------------+</span><br><span class="line"> |element         |</span><br><span class="line"> |                |</span><br><span class="line"> +----------------+</span><br></pre></td></tr></table></figure>
+<h3 id="Window-and-Element-Model"><a href="#Window-and-Element-Model" class="headerlink" title="Window and Element Model"></a>Window and Element Model</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">scrollY:</span><br><span class="line"></span><br><span class="line">-n</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 0        +----------------------+  &lt;-------------+  windowTop</span><br><span class="line">          |                      |</span><br><span class="line">          |                      |</span><br><span class="line">     +-------------------------------+  &lt;---------+  elementTop</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     +-------------------------------+  &lt;---------+  elementBottom</span><br><span class="line">          |                      |</span><br><span class="line">          |                      |</span><br><span class="line">          +----------------------+  &lt;-------------+  windowBottom</span><br><span class="line"> n</span><br></pre></td></tr></table></figure>
+<h3 id="Vanilla-Javascript"><a href="#Vanilla-Javascript" class="headerlink" title="Vanilla Javascript"></a>Vanilla Javascript</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> windowTop = <span class="built_in">window</span>.scrollY;</span><br><span class="line"><span class="keyword">var</span> windowBottom = windowTop + <span class="built_in">window</span>.innerHeight;</span><br><span class="line"><span class="keyword">var</span> elementTop = <span class="built_in">Math</span>.ceil(element.getBoundingClientRect().top + <span class="built_in">document</span>.body.scrollTop);</span><br><span class="line"><span class="keyword">var</span> elementBottom = elementTop + <span class="built_in">Math</span>.ceil(element.getBoundingClientRect().height);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((windowTop &lt; elementTop) &amp;&amp; (windowBottom &gt; elementBottom)) &#123;</span><br><span class="line">    <span class="comment">// in the screen (strict)</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> ((elementTop &lt;= windowBottom) &amp;&amp; (elementBottom &gt;= windowTop)) &#123;</span><br><span class="line">    <span class="comment">// int the screen (particial)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> windowTop = $(<span class="built_in">window</span>).scrollTop();</span><br><span class="line"><span class="keyword">var</span> windowBottom = windowTop + $(<span class="built_in">window</span>).height();</span><br><span class="line"><span class="keyword">var</span> elementTop = <span class="built_in">Math</span>.ceil($(element).offset().top);</span><br><span class="line"><span class="keyword">var</span> elementBottom = elementTop + $(element).height();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((windowTop &lt; elementTop) &amp;&amp; (windowBottom &gt; elementBottom)) &#123;</span><br><span class="line">    <span class="comment">// in the screen (strict)</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> ((elementTop &lt;= windowBottom) &amp;&amp; (elementBottom &gt;= windowTop)) &#123;</span><br><span class="line">    <span class="comment">// int the screen (particial)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links<p></p></h2><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach</a></li>
+<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/:nth-child" target="_blank" rel="noopener">https://developer.mozilla.org/en/docs/Web/CSS/:nth-child</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/" data-id="cjt082h2n0005647xlis75o9m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/cookbook/">&laquo; Prev</a><a class="page-number" href="/cookbook/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws/">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws-cli/">aws-cli</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-c/">ctrl-c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-v/">ctrl-v</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-beats/">fluent-plugin-beats</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-grep/">fluent-plugin-grep</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mac/">mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/money-format/">money_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-route/">multiple_route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/number-format/">number_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/route/">route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/timezone/">timezone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/tips/">tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/cookbook/tags/angular-css-scss-style-convert/" style="font-size: 10px;">angular, css, scss, style, convert</a> <a href="/cookbook/tags/aws/" style="font-size: 10px;">aws</a> <a href="/cookbook/tags/aws-cli/" style="font-size: 10px;">aws-cli</a> <a href="/cookbook/tags/ctrl-c/" style="font-size: 10px;">ctrl-c</a> <a href="/cookbook/tags/ctrl-v/" style="font-size: 10px;">ctrl-v</a> <a href="/cookbook/tags/docker/" style="font-size: 10px;">docker</a> <a href="/cookbook/tags/elasticsearch/" style="font-size: 20px;">elasticsearch</a> <a href="/cookbook/tags/fluent-plugin-beats/" style="font-size: 10px;">fluent-plugin-beats</a> <a href="/cookbook/tags/fluent-plugin-grep/" style="font-size: 10px;">fluent-plugin-grep</a> <a href="/cookbook/tags/fluentd/" style="font-size: 20px;">fluentd</a> <a href="/cookbook/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/cookbook/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/cookbook/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/cookbook/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/cookbook/tags/linux/" style="font-size: 10px;">linux</a> <a href="/cookbook/tags/mac/" style="font-size: 10px;">mac</a> <a href="/cookbook/tags/money-format/" style="font-size: 10px;">money_format</a> <a href="/cookbook/tags/multiple-extension/" style="font-size: 10px;">multiple_extension</a> <a href="/cookbook/tags/multiple-route/" style="font-size: 10px;">multiple_route</a> <a href="/cookbook/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/cookbook/tags/number-format/" style="font-size: 10px;">number_format</a> <a href="/cookbook/tags/openssl/" style="font-size: 10px;">openssl</a> <a href="/cookbook/tags/route/" style="font-size: 10px;">route</a> <a href="/cookbook/tags/timezone/" style="font-size: 10px;">timezone</a> <a href="/cookbook/tags/tips/" style="font-size: 10px;">tips</a> <a href="/cookbook/tags/todo/" style="font-size: 10px;">todo</a> <a href="/cookbook/tags/trello-smallmodal-expandwidth/" style="font-size: 10px;">trello, smallmodal, expandwidth</a> <a href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/" style="font-size: 10px;">ubuntu 18.04 ubuntu-18.04 tip</a> <a href="/cookbook/tags/ubuntu18-04/" style="font-size: 10px;">ubuntu18.04</a> <a href="/cookbook/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/cookbook/tags/vue/" style="font-size: 10px;">vue</a> <a href="/cookbook/tags/window-top/" style="font-size: 10px;">window.top</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2017/10/">October 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/cookbook/2019/02/04/javascript/">javascript</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/24/mysql/">mysql</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/22/aws-cli/">aws-cli</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2019/01/08/fluent-plugin-grep/">fluent-plugin-xxxx</a>
+          </li>
+        
+          <li>
+            <a href="/cookbook/2018/12/27/mac/">mac</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Sangmin Lee<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/cookbook/" class="mobile-nav-link">Home</a>
+  
+    <a href="/cookbook/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/cookbook/fancybox/jquery.fancybox.css">
+  <script src="/cookbook/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/cookbook/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
