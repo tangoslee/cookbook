@@ -5,11 +5,11 @@
   
 
   
-  <title>Tag: docker | Cookbook</title>
+  <title>Cookbook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Cookbook">
-<meta property="og:url" content="https://tangoslee.github.io/cookbook/tags/docker/index.html">
+<meta property="og:url" content="https://tangoslee.github.io/cookbook/page/3/index.html">
 <meta property="og:site_name" content="Cookbook">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -72,38 +72,60 @@
       <div class="outer">
         <section id="main">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/cookbook/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/cookbook/2018/10/10/elasticsearch/" class="archive-article-date">
-  <time datetime="2018-10-10T23:00:32.000Z" itemprop="datePublished">Oct 10</time>
+    <article id="post-detecting-element-is-in-a-specific-section-javascript" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/" class="article-date">
+  <time datetime="2017-10-04T17:03:54.000Z" itemprop="datePublished">2017-10-04</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/cookbook/2018/10/10/elasticsearch/">elasticsearch</a>
+      <a class="article-title" href="/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/">Detecting an Element is in a specific position on the screen</a>
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Detecting-an-Element-Is-in-the-Screen"><a href="#Detecting-an-Element-Is-in-the-Screen" class="headerlink" title="Detecting an Element Is in the Screen."></a>Detecting an Element Is in the Screen.</h2><h3 id="Scenario"><a href="#Scenario" class="headerlink" title="Scenario"></a>Scenario</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> Out of the screen       in the screen (particially)   in the screen (strictly)</span><br><span class="line"></span><br><span class="line"> +----------------+</span><br><span class="line"> |element         |</span><br><span class="line"> |                |</span><br><span class="line"> +----------------+         +--------------+</span><br><span class="line">                            | element      |</span><br><span class="line">+------------------+     +--------------------+      +--------------------+</span><br><span class="line">|                  |     |  +--------------+  |      |                    |</span><br><span class="line">|                  |     |                    |      |  +--------------+  |</span><br><span class="line">|                  |     |                    |      |  | element      |  |</span><br><span class="line">| screen           |     |  screen            |      |  |              |  |</span><br><span class="line">|                  |     |                    |      |  +--------------+  |</span><br><span class="line">|                  |     |                    |      |   screen           |</span><br><span class="line">|                  |     |                    |      |                    |</span><br><span class="line">+------------------+     +--------------------+      +--------------------+</span><br><span class="line"></span><br><span class="line"> +----------------+</span><br><span class="line"> |element         |</span><br><span class="line"> |                |</span><br><span class="line"> +----------------+</span><br></pre></td></tr></table></figure>
+<h3 id="Window-and-Element-Model"><a href="#Window-and-Element-Model" class="headerlink" title="Window and Element Model"></a>Window and Element Model</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">scrollY:</span><br><span class="line"></span><br><span class="line">-n</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 0        +----------------------+  &lt;-------------+  windowTop</span><br><span class="line">          |                      |</span><br><span class="line">          |                      |</span><br><span class="line">     +-------------------------------+  &lt;---------+  elementTop</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     +-------------------------------+  &lt;---------+  elementBottom</span><br><span class="line">          |                      |</span><br><span class="line">          |                      |</span><br><span class="line">          +----------------------+  &lt;-------------+  windowBottom</span><br><span class="line"> n</span><br></pre></td></tr></table></figure>
+<h3 id="Vanilla-Javascript"><a href="#Vanilla-Javascript" class="headerlink" title="Vanilla Javascript"></a>Vanilla Javascript</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> windowTop = <span class="built_in">window</span>.scrollY;</span><br><span class="line"><span class="keyword">var</span> windowBottom = windowTop + <span class="built_in">window</span>.innerHeight;</span><br><span class="line"><span class="keyword">var</span> elementTop = <span class="built_in">Math</span>.ceil(element.getBoundingClientRect().top + <span class="built_in">document</span>.body.scrollTop);</span><br><span class="line"><span class="keyword">var</span> elementBottom = elementTop + <span class="built_in">Math</span>.ceil(element.getBoundingClientRect().height);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((windowTop &lt; elementTop) &amp;&amp; (windowBottom &gt; elementBottom)) &#123;</span><br><span class="line">    <span class="comment">// in the screen (strict)</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> ((elementTop &lt;= windowBottom) &amp;&amp; (elementBottom &gt;= windowTop)) &#123;</span><br><span class="line">    <span class="comment">// int the screen (particial)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> windowTop = $(<span class="built_in">window</span>).scrollTop();</span><br><span class="line"><span class="keyword">var</span> windowBottom = windowTop + $(<span class="built_in">window</span>).height();</span><br><span class="line"><span class="keyword">var</span> elementTop = <span class="built_in">Math</span>.ceil($(element).offset().top);</span><br><span class="line"><span class="keyword">var</span> elementBottom = elementTop + $(element).height();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((windowTop &lt; elementTop) &amp;&amp; (windowBottom &gt; elementBottom)) &#123;</span><br><span class="line">    <span class="comment">// in the screen (strict)</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> ((elementTop &lt;= windowBottom) &amp;&amp; (elementBottom &gt;= windowTop)) &#123;</span><br><span class="line">    <span class="comment">// int the screen (particial)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links<p></p></h2><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach</a></li>
+<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/:nth-child" target="_blank" rel="noopener">https://developer.mozilla.org/en/docs/Web/CSS/:nth-child</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/" data-id="cjvag2daf00053u7xaui1omti" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
+
+    </footer>
   </div>
+  
 </article>
-  
-  
-    </div></section>
+
+
   
 
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/cookbook/page/2/">&laquo; Prev</a><a class="page-number" href="/cookbook/">1</a><a class="page-number" href="/cookbook/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
 
 </section>
         

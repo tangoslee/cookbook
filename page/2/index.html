@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
 
@@ -35,7 +35,7 @@
     gtag('config', 'UA-128083707-1');
   </script>
 </head>
-
+</html>
 <body>
   <div id="container">
     <div id="wrap">
@@ -72,7 +72,65 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Vue-Cookbook" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-vscode-cookbook" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cookbook/2018/11/05/vscode-cookbook/" class="article-date">
+  <time datetime="2018-11-05T05:13:43.000Z" itemprop="datePublished">2018-11-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cookbook/2018/11/05/vscode-cookbook/">Vscode Cookbook</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Run-multiple-vscode-in-dedicaated-environments-Ubuntu"><a href="#Run-multiple-vscode-in-dedicaated-environments-Ubuntu" class="headerlink" title="Run multiple vscode in dedicaated environments (Ubuntu)"></a>Run multiple vscode in dedicaated environments (Ubuntu)</h2><p>Let’s make multiple vscode environements that have own extensions and configuration.</p>
+<h3 id="System-Default"><a href="#System-Default" class="headerlink" title="System Default"></a>System Default</h3><ul>
+<li><p>Default user data directory</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.vscode</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Default extention directory</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.vscode/extentions</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Run vs code with a specific directory</p>
+<p>e.g) $APP_ROOT</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/code/code --user-data-dir <span class="variable">$APP_ROOT</span> --extensionHomePath <span class="variable">$APP_ROOT</span>/extensions</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="VSCode-for-Angular"><a href="#VSCode-for-Angular" class="headerlink" title="VSCode for Angular"></a>VSCode for Angular</h3><p>user-data-dir: ~/.vscode-angular</p>
+<ul>
+<li><p>Make a desktop launcher  (~/.local/share/applications/vscode-angular.desktop)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Version=1.0</span><br><span class="line">Type=Application</span><br><span class="line">Name=Visual Studio Code <span class="keyword">for</span> Angular</span><br><span class="line">Icon=/opt/icons/vscode-angular.png</span><br><span class="line">Path=/usr/share/code</span><br><span class="line">Exec=/bin/sh -c <span class="string">"/usr/share/code/code --user-data-dir <span class="variable">$HOME</span>/.vscode-angular --extensionHomePath <span class="variable">$HOME</span>/.vscode-angular/extensions"</span></span><br><span class="line">StartupNotify=<span class="literal">false</span></span><br><span class="line">OnlyShowIn=Unity;</span><br><span class="line">X-UnityGenerated=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>enjoy~~</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/05/vscode-cookbook/" data-id="cjvag2db3000x3u7xvc1eoqdc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Vue-Cookbook" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/11/01/Vue-Cookbook/" class="article-date">
   <time datetime="2018-11-01T19:18:42.000Z" itemprop="datePublished">2018-11-01</time>
@@ -126,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/11/01/Vue-Cookbook/" data-id="cjt082h2c0001647x9ffwygih" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/11/01/Vue-Cookbook/" data-id="cjvag2da600013u7xu290htt3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/vue/">vue</a></li></ul>
@@ -138,7 +196,7 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/10/19/hello-world/" class="article-date">
   <time datetime="2018-10-19T06:07:38.730Z" itemprop="datePublished">2018-10-19</time>
@@ -173,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/10/19/hello-world/" data-id="cjt082h32000e647xz7m0mwu2" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/19/hello-world/" data-id="cjvag2dar000c3u7xm11exg8m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -183,7 +241,7 @@
 
 
   
-    <article id="post-ubuntu-18-04" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ubuntu-18-04" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/10/19/ubuntu-18-04/" class="article-date">
   <time datetime="2018-10-19T05:57:34.000Z" itemprop="datePublished">2018-10-19</time>
@@ -224,7 +282,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/10/19/ubuntu-18-04/" data-id="cjt082h44001i647xiyulg0fd" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/19/ubuntu-18-04/" data-id="cjvag2db2000v3u7x71jp480m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li></ul>
@@ -236,7 +294,7 @@
 
 
   
-    <article id="post-elasticsearch" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-elasticsearch" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/10/10/elasticsearch/" class="article-date">
   <time datetime="2018-10-10T23:00:32.000Z" itemprop="datePublished">2018-10-10</time>
@@ -287,7 +345,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/10/10/elasticsearch/" data-id="cjt082h2z000a647x887i78jn" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/10/elasticsearch/" data-id="cjvag2dao00093u7xwhtlngxw" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li></ul>
@@ -299,7 +357,7 @@
 
 
   
-    <article id="post-todo" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-todo" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/10/09/todo/" class="article-date">
   <time datetime="2018-10-09T12:26:56.000Z" itemprop="datePublished">2018-10-09</time>
@@ -354,7 +412,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/10/09/todo/" data-id="cjt082h43001h647xhduthkph" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/09/todo/" data-id="cjvag2db0000t3u7xl4lgxolb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/todo/">todo</a></li></ul>
@@ -366,7 +424,7 @@
 
 
   
-    <article id="post-how-to-set-ssl-certificate-to-localhost-in-angular5" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-how-to-set-ssl-certificate-to-localhost-in-angular5" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/" class="article-date">
   <time datetime="2018-10-04T17:03:54.000Z" itemprop="datePublished">2018-10-04</time>
@@ -401,7 +459,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/" data-id="cjt082h3r001a647xi6b1nao7" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/10/04/how-to-set-ssl-certificate-to-localhost-in-angular5/" data-id="cjvag2dau000h3u7xr3ikh0am" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/tips/">tips</a></li></ul>
@@ -413,7 +471,7 @@
 
 
   
-    <article id="post-change-default-style-from-css-to-scss-in-angular" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-change-default-style-from-css-to-scss-in-angular" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/" class="article-date">
   <time datetime="2018-09-30T14:24:48.000Z" itemprop="datePublished">2018-09-30</time>
@@ -446,7 +504,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/" data-id="cjt082h2f0002647xv9jggd52" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/09/30/change-default-style-from-css-to-scss-in-angular/" data-id="cjvag2dac00043u7x2ob6kf2m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li></ul>
@@ -458,7 +516,7 @@
 
 
   
-    <article id="post-how-to-expand-trello-modal-width" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-how-to-expand-trello-modal-width" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/09/18/how-to-expand-trello-modal-width/" class="article-date">
   <time datetime="2018-09-18T11:53:28.000Z" itemprop="datePublished">2018-09-18</time>
@@ -495,7 +553,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/09/18/how-to-expand-trello-modal-width/" data-id="cjt082h30000c647xc5pug0v9" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/09/18/how-to-expand-trello-modal-width/" data-id="cjvag2das000d3u7xakdmxmw8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li></ul>
@@ -507,7 +565,7 @@
 
 
   
-    <article id="post-how-to-set-l2tp-vpn-for-ubuntu-16-04" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-how-to-set-l2tp-vpn-for-ubuntu-16-04" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/" class="article-date">
   <time datetime="2018-07-14T07:19:05.000Z" itemprop="datePublished">2018-07-14</time>
@@ -546,57 +604,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/" data-id="cjt082h33000g647xedpme0h2" class="article-share-link">Share</a>
+      <a data-url="https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/" data-id="cjvag2dat000f3u7xz92wew3a" class="article-share-link">Share</a>
       
       
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-detecting-element-is-in-a-specific-section-javascript" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/" class="article-date">
-  <time datetime="2017-10-04T17:03:54.000Z" itemprop="datePublished">2017-10-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/">Detecting an Element is in a specific position on the screen</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Detecting-an-Element-Is-in-the-Screen"><a href="#Detecting-an-Element-Is-in-the-Screen" class="headerlink" title="Detecting an Element Is in the Screen."></a>Detecting an Element Is in the Screen.</h2><h3 id="Scenario"><a href="#Scenario" class="headerlink" title="Scenario"></a>Scenario</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> Out of the screen       in the screen (particially)   in the screen (strictly)</span><br><span class="line"></span><br><span class="line"> +----------------+</span><br><span class="line"> |element         |</span><br><span class="line"> |                |</span><br><span class="line"> +----------------+         +--------------+</span><br><span class="line">                            | element      |</span><br><span class="line">+------------------+     +--------------------+      +--------------------+</span><br><span class="line">|                  |     |  +--------------+  |      |                    |</span><br><span class="line">|                  |     |                    |      |  +--------------+  |</span><br><span class="line">|                  |     |                    |      |  | element      |  |</span><br><span class="line">| screen           |     |  screen            |      |  |              |  |</span><br><span class="line">|                  |     |                    |      |  +--------------+  |</span><br><span class="line">|                  |     |                    |      |   screen           |</span><br><span class="line">|                  |     |                    |      |                    |</span><br><span class="line">+------------------+     +--------------------+      +--------------------+</span><br><span class="line"></span><br><span class="line"> +----------------+</span><br><span class="line"> |element         |</span><br><span class="line"> |                |</span><br><span class="line"> +----------------+</span><br></pre></td></tr></table></figure>
-<h3 id="Window-and-Element-Model"><a href="#Window-and-Element-Model" class="headerlink" title="Window and Element Model"></a>Window and Element Model</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">scrollY:</span><br><span class="line"></span><br><span class="line">-n</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 0        +----------------------+  &lt;-------------+  windowTop</span><br><span class="line">          |                      |</span><br><span class="line">          |                      |</span><br><span class="line">     +-------------------------------+  &lt;---------+  elementTop</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     |    |                      |   |</span><br><span class="line">     +-------------------------------+  &lt;---------+  elementBottom</span><br><span class="line">          |                      |</span><br><span class="line">          |                      |</span><br><span class="line">          +----------------------+  &lt;-------------+  windowBottom</span><br><span class="line"> n</span><br></pre></td></tr></table></figure>
-<h3 id="Vanilla-Javascript"><a href="#Vanilla-Javascript" class="headerlink" title="Vanilla Javascript"></a>Vanilla Javascript</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> windowTop = <span class="built_in">window</span>.scrollY;</span><br><span class="line"><span class="keyword">var</span> windowBottom = windowTop + <span class="built_in">window</span>.innerHeight;</span><br><span class="line"><span class="keyword">var</span> elementTop = <span class="built_in">Math</span>.ceil(element.getBoundingClientRect().top + <span class="built_in">document</span>.body.scrollTop);</span><br><span class="line"><span class="keyword">var</span> elementBottom = elementTop + <span class="built_in">Math</span>.ceil(element.getBoundingClientRect().height);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((windowTop &lt; elementTop) &amp;&amp; (windowBottom &gt; elementBottom)) &#123;</span><br><span class="line">    <span class="comment">// in the screen (strict)</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> ((elementTop &lt;= windowBottom) &amp;&amp; (elementBottom &gt;= windowTop)) &#123;</span><br><span class="line">    <span class="comment">// int the screen (particial)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> windowTop = $(<span class="built_in">window</span>).scrollTop();</span><br><span class="line"><span class="keyword">var</span> windowBottom = windowTop + $(<span class="built_in">window</span>).height();</span><br><span class="line"><span class="keyword">var</span> elementTop = <span class="built_in">Math</span>.ceil($(element).offset().top);</span><br><span class="line"><span class="keyword">var</span> elementBottom = elementTop + $(element).height();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((windowTop &lt; elementTop) &amp;&amp; (windowBottom &gt; elementBottom)) &#123;</span><br><span class="line">    <span class="comment">// in the screen (strict)</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> ((elementTop &lt;= windowBottom) &amp;&amp; (elementBottom &gt;= windowTop)) &#123;</span><br><span class="line">    <span class="comment">// int the screen (particial)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links<p></p></h2><ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach</a></li>
-<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/:nth-child" target="_blank" rel="noopener">https://developer.mozilla.org/en/docs/Web/CSS/:nth-child</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/" data-id="cjt082h2n0005647xlis75o9m" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
-
     </footer>
   </div>
   
@@ -608,7 +618,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/cookbook/">&laquo; Prev</a><a class="page-number" href="/cookbook/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/cookbook/">&laquo; Prev</a><a class="page-number" href="/cookbook/">1</a><span class="page-number current">2</span><a class="page-number" href="/cookbook/page/3/">3</a><a class="extend next" rel="next" href="/cookbook/page/3/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -622,7 +632,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws/">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws-cli/">aws-cli</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-c/">ctrl-c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-v/">ctrl-v</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-beats/">fluent-plugin-beats</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-grep/">fluent-plugin-grep</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mac/">mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/money-format/">money_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-route/">multiple_route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/number-format/">number_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/route/">route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/timezone/">timezone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/tips/">tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/angular-css-scss-style-convert/">angular, css, scss, style, convert</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws/">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/aws-cli/">aws-cli</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-c/">ctrl-c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ctrl-v/">ctrl-v</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/elasticsearch/">elasticsearch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/eslint/">eslint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-beats/">fluent-plugin-beats</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluent-plugin-grep/">fluent-plugin-grep</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/fluentd/">fluentd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/kibana/">kibana</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/laravel/">laravel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mac/">mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/money-format/">money_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-extension/">multiple_extension</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/multiple-route/">multiple_route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/number-format/">number_format</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/openssl/">openssl</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/react/">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/route/">route</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/timezone/">timezone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/tips/">tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/todo/">todo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/trello-smallmodal-expandwidth/">trello, smallmodal, expandwidth</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/">ubuntu 18.04 ubuntu-18.04 tip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/ubuntu18-04/">ubuntu18.04</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vscode/">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/cookbook/tags/window-top/">window.top</a></li></ul>
     </div>
   </div>
 
@@ -632,7 +642,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/cookbook/tags/angular-css-scss-style-convert/" style="font-size: 10px;">angular, css, scss, style, convert</a> <a href="/cookbook/tags/aws/" style="font-size: 10px;">aws</a> <a href="/cookbook/tags/aws-cli/" style="font-size: 10px;">aws-cli</a> <a href="/cookbook/tags/ctrl-c/" style="font-size: 10px;">ctrl-c</a> <a href="/cookbook/tags/ctrl-v/" style="font-size: 10px;">ctrl-v</a> <a href="/cookbook/tags/docker/" style="font-size: 10px;">docker</a> <a href="/cookbook/tags/elasticsearch/" style="font-size: 20px;">elasticsearch</a> <a href="/cookbook/tags/fluent-plugin-beats/" style="font-size: 10px;">fluent-plugin-beats</a> <a href="/cookbook/tags/fluent-plugin-grep/" style="font-size: 10px;">fluent-plugin-grep</a> <a href="/cookbook/tags/fluentd/" style="font-size: 20px;">fluentd</a> <a href="/cookbook/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/cookbook/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/cookbook/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/cookbook/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/cookbook/tags/linux/" style="font-size: 10px;">linux</a> <a href="/cookbook/tags/mac/" style="font-size: 10px;">mac</a> <a href="/cookbook/tags/money-format/" style="font-size: 10px;">money_format</a> <a href="/cookbook/tags/multiple-extension/" style="font-size: 10px;">multiple_extension</a> <a href="/cookbook/tags/multiple-route/" style="font-size: 10px;">multiple_route</a> <a href="/cookbook/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/cookbook/tags/number-format/" style="font-size: 10px;">number_format</a> <a href="/cookbook/tags/openssl/" style="font-size: 10px;">openssl</a> <a href="/cookbook/tags/route/" style="font-size: 10px;">route</a> <a href="/cookbook/tags/timezone/" style="font-size: 10px;">timezone</a> <a href="/cookbook/tags/tips/" style="font-size: 10px;">tips</a> <a href="/cookbook/tags/todo/" style="font-size: 10px;">todo</a> <a href="/cookbook/tags/trello-smallmodal-expandwidth/" style="font-size: 10px;">trello, smallmodal, expandwidth</a> <a href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/" style="font-size: 10px;">ubuntu 18.04 ubuntu-18.04 tip</a> <a href="/cookbook/tags/ubuntu18-04/" style="font-size: 10px;">ubuntu18.04</a> <a href="/cookbook/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/cookbook/tags/vue/" style="font-size: 10px;">vue</a> <a href="/cookbook/tags/window-top/" style="font-size: 10px;">window.top</a>
+      <a href="/cookbook/tags/angular-css-scss-style-convert/" style="font-size: 10px;">angular, css, scss, style, convert</a> <a href="/cookbook/tags/aws/" style="font-size: 10px;">aws</a> <a href="/cookbook/tags/aws-cli/" style="font-size: 10px;">aws-cli</a> <a href="/cookbook/tags/ctrl-c/" style="font-size: 10px;">ctrl-c</a> <a href="/cookbook/tags/ctrl-v/" style="font-size: 10px;">ctrl-v</a> <a href="/cookbook/tags/docker/" style="font-size: 10px;">docker</a> <a href="/cookbook/tags/elasticsearch/" style="font-size: 20px;">elasticsearch</a> <a href="/cookbook/tags/eslint/" style="font-size: 10px;">eslint</a> <a href="/cookbook/tags/fluent-plugin-beats/" style="font-size: 10px;">fluent-plugin-beats</a> <a href="/cookbook/tags/fluent-plugin-grep/" style="font-size: 10px;">fluent-plugin-grep</a> <a href="/cookbook/tags/fluentd/" style="font-size: 20px;">fluentd</a> <a href="/cookbook/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/cookbook/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/cookbook/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/cookbook/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/cookbook/tags/linux/" style="font-size: 10px;">linux</a> <a href="/cookbook/tags/mac/" style="font-size: 10px;">mac</a> <a href="/cookbook/tags/money-format/" style="font-size: 10px;">money_format</a> <a href="/cookbook/tags/multiple-extension/" style="font-size: 10px;">multiple_extension</a> <a href="/cookbook/tags/multiple-route/" style="font-size: 10px;">multiple_route</a> <a href="/cookbook/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/cookbook/tags/number-format/" style="font-size: 10px;">number_format</a> <a href="/cookbook/tags/openssl/" style="font-size: 10px;">openssl</a> <a href="/cookbook/tags/react/" style="font-size: 10px;">react</a> <a href="/cookbook/tags/route/" style="font-size: 10px;">route</a> <a href="/cookbook/tags/timezone/" style="font-size: 10px;">timezone</a> <a href="/cookbook/tags/tips/" style="font-size: 10px;">tips</a> <a href="/cookbook/tags/todo/" style="font-size: 10px;">todo</a> <a href="/cookbook/tags/trello-smallmodal-expandwidth/" style="font-size: 10px;">trello, smallmodal, expandwidth</a> <a href="/cookbook/tags/ubuntu-18-04-ubuntu-18-04-tip/" style="font-size: 10px;">ubuntu 18.04 ubuntu-18.04 tip</a> <a href="/cookbook/tags/ubuntu18-04/" style="font-size: 10px;">ubuntu18.04</a> <a href="/cookbook/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/cookbook/tags/vue/" style="font-size: 10px;">vue</a> <a href="/cookbook/tags/window-top/" style="font-size: 10px;">window.top</a>
     </div>
   </div>
 
@@ -641,7 +651,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2017/10/">October 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/cookbook/archives/2017/10/">October 2017</a></li></ul>
     </div>
   </div>
 
@@ -652,6 +662,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/cookbook/2019/05/05/react-tips/">react_tips</a>
+          </li>
         
           <li>
             <a href="/cookbook/2019/02/04/javascript/">javascript</a>
@@ -667,10 +681,6 @@
         
           <li>
             <a href="/cookbook/2019/01/08/fluent-plugin-grep/">fluent-plugin-xxxx</a>
-          </li>
-        
-          <li>
-            <a href="/cookbook/2018/12/27/mac/">mac</a>
           </li>
         
       </ul>

@@ -6,7 +6,7 @@
   <link href="/cookbook/atom.xml" rel="self"/>
   
   <link href="https://tangoslee.github.io/cookbook/"/>
-  <updated>2019-02-08T04:09:55.451Z</updated>
+  <updated>2019-05-05T04:34:47.592Z</updated>
   <id>https://tangoslee.github.io/cookbook/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react_tips</title>
+    <link href="https://tangoslee.github.io/cookbook/2019/05/05/react-tips/"/>
+    <id>https://tangoslee.github.io/cookbook/2019/05/05/react-tips/</id>
+    <published>2019-05-05T04:21:56.000Z</published>
+    <updated>2019-05-05T04:34:47.592Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Eslint-config-for-react&quot;&gt;&lt;a href=&quot;#Eslint-config-for-react&quot; class=&quot;headerlink&quot; title=&quot;Eslint config for react&quot;&gt;&lt;/a&gt;Eslint config
+        
+      
+    
+    </summary>
+    
+    
+      <category term="react" scheme="https://tangoslee.github.io/cookbook/tags/react/"/>
+    
+      <category term="eslint" scheme="https://tangoslee.github.io/cookbook/tags/eslint/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript</title>
@@ -497,34 +523,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Detecting an Element is in a specific position on the screen</title>
-    <link href="https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/"/>
-    <id>https://tangoslee.github.io/cookbook/2017/10/04/detecting-element-is-in-a-specific-section-javascript/</id>
-    <published>2017-10-04T17:03:54.000Z</published>
-    <updated>2018-11-06T19:10:43.812Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Detecting-an-Element-Is-in-the-Screen&quot;&gt;&lt;a href=&quot;#Detecting-an-Element-Is-in-the-Screen&quot; class=&quot;headerlink&quot; title=&quot;Detecting an
-        
-      
-    
-    </summary>
-    
-    
-      <category term="javascript" scheme="https://tangoslee.github.io/cookbook/tags/javascript/"/>
-    
-      <category term="window.top" scheme="https://tangoslee.github.io/cookbook/tags/window-top/"/>
-    
-      <category term="jQuery" scheme="https://tangoslee.github.io/cookbook/tags/jQuery/"/>
     
   </entry>
   
