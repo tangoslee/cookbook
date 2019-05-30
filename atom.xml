@@ -6,7 +6,7 @@
   <link href="/cookbook/atom.xml" rel="self"/>
   
   <link href="https://tangoslee.github.io/cookbook/"/>
-  <updated>2019-05-05T18:54:15.287Z</updated>
+  <updated>2019-05-30T02:55:21.455Z</updated>
   <id>https://tangoslee.github.io/cookbook/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ontario Immigrant Nominee Program-OINP</title>
+    <link href="https://tangoslee.github.io/cookbook/2019/05/29/Ontario-Immigrant-Nominee-Program-OINP/"/>
+    <id>https://tangoslee.github.io/cookbook/2019/05/29/Ontario-Immigrant-Nominee-Program-OINP/</id>
+    <published>2019-05-30T02:00:44.000Z</published>
+    <updated>2019-05-30T02:55:21.455Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Ontario-Immigrant-Nominee-Program-OINP&quot;&gt;&lt;a href=&quot;#Ontario-Immigrant-Nominee-Program-OINP&quot; class=&quot;headerlink&quot; title=&quot;Ontario
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Ontario_Immigrant_Nominee_Program" scheme="https://tangoslee.github.io/cookbook/tags/Ontario-Immigrant-Nominee-Program/"/>
+    
+      <category term="OINP" scheme="https://tangoslee.github.io/cookbook/tags/OINP/"/>
+    
+      <category term="PR" scheme="https://tangoslee.github.io/cookbook/tags/PR/"/>
+    
+      <category term="Permanent_Residence" scheme="https://tangoslee.github.io/cookbook/tags/Permanent-Residence/"/>
+    
+  </entry>
   
   <entry>
     <title>react_tips</title>
@@ -500,29 +530,6 @@
     
     
       <category term="trello, smallmodal, expandwidth" scheme="https://tangoslee.github.io/cookbook/tags/trello-smallmodal-expandwidth/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to Set L2TP VPN for Ubuntu 16.04</title>
-    <link href="https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/"/>
-    <id>https://tangoslee.github.io/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/</id>
-    <published>2018-07-14T07:19:05.000Z</published>
-    <updated>2018-09-11T15:31:53.593Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;img src=&quot;/cookbook/2018/07/14/how-to-set-l2tp-vpn-for-ubuntu-16-04/vpn/vpn1.png&quot;&gt;
-&lt;img
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
